@@ -4,55 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Máy Tính Bỏ Túi</title>
     <style>
         body div {
             margin: auto;
             width: 50%;
         }
 
-        table tr:first-child th {
-            text-align: right;
-            font-size: 2.5em;
+        .container {
+            border: 2px solid black;
         }
 
-        table th {
+        table tr:first-child td {
+            text-align: right;
+            font-size: 2.5em;
+            border-bottom: 2px solid black;
+        }
+
+        table td {
             width: 100px;
-            border: 2px solid red;
-            font-size: 2rem;
+        }
+
+        .btn {
+            width: 100%;
+            text-align: center;
+            padding: 10px 10px;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <table>
             <tr>
-                <th colspan="4">abc</th>
+                <td colspan="4">abc</td>
             </tr>
             <tr>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
+
+                <td><input type="button" value="1" class="btn"></td>
+                <td><input type="button" value="2" class="btn"></td>
+                <td><input type="button" value="3" class="btn"></td>
+                <td><input type="button" value="4" class="btn"></td>
+
             </tr>
             <tr>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-                <th>-</th>
+
+                <td><input type="button" value="4" class="btn"></td>
+                <td><input type="button" value="5" class="btn"></td>
+                <td><input type="button" value="6" class="btn"></td>
+                <td><input type="button" value="7" class="btn"></td>
             </tr>
             <tr>
-                <th>7</th>
-                <th>8</th>
-                <th>9</th>
-                <th>x</th>
+
+                <td><input type="button" value="7" class="btn"></td>
+                <td><input type="button" value="8" class="btn"></td>
+                <td><input type="button" value="9" class="btn"></td>
+                <td><input type="button" value="x" class="btn"></td>
             </tr>
             <tr>
-                <th>C</th>
-                <th>0</th>
-                <th>=</th>
-                <th>/</th>
+                <td><input type="button" value="C" class="btn"></td>
+                <td><input type="button" value="0" class="btn"></td>
+                <td><input type="button" value="=" class="btn"></td>
+                <td><input type="button" value="/" class="btn"></td>
             </tr>
         </table>
     </div>

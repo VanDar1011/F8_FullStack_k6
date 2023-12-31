@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Access Manager</title>
+    <link rel="stylesheet" href="./assets/css/style03.css">
+</head>
+
+<body>
+
+    <div class="formaccess">
+        <form action="">
+            <table>
+                <tr>
+                    <th><label for="username">UserName</label></th>
+                    <td> <input type="text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="pwd">Password
+                        </label>
+                    </th>
+                    <td> <input type="password" name="pwd" id="pwd"></td>
+                </tr>
+                <tr>
+                    <th> <label for="city">City of</label></th>
+                    <td> <input type="password" name="city" id="city"></td>
+                </tr>
+                <tr>
+                    <th> <label for="employment">Employment</label></th>
+                    <td> <input type="text" name="employment" id="employment"> </td>
+                </tr>
+                <tr>
+                    <th> <label for="webserver">Webserver</label></th>
+                    <td>
+                        <select name="webserver" id="webserver">
+                            <option value="titleserver">-Choose a server</option>
+                            <option value="server1">Server1</option>
+                            <option value="server2">Server2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+
+                    <th> Please specify your role</th>
+
+
+                    <td class="role-in-work">
+                        <label for="admin"> <input type="radio" name="yourrole" id="admin"> Admin</label>
+                        <label for="engineer"> <input type="radio" name="yourrole" id="engineer"> Engineer</label>
+                        <label for="manager"> <input type="radio" name="yourrole" id="manager"> Manager</label>
+                        <label for="guest"> <input type="radio" name="yourrole" id="guest"> Guest</label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>
+                        Single Sign-on to the following
+                    </th>
+                    <td class="signon-with">
+                        <label for="mail">
+                            <input type="checkbox" name="" id="mail">Mail
+                        </label>
+                        <label for="payroll">
+                            <input type="checkbox" name="" id="payroll">Payroll
+                        </label>
+                        <label for="self-service">
+                            <input type="checkbox" name="" id="self-service">Self-service
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <!-- end table -->
+            <div class="btn-box">
+                <button type="button" class="btn" id="btn-login">Login</button>
+                <button type="reset" class="btn" id="btn-reset">Reset</button>
+
+            </div>
+            <!-- edn btn-box -->
+        </form>
+    </div>
+</body>
+
+</html>
