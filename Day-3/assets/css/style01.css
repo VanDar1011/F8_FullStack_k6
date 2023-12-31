@@ -1,0 +1,83 @@
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+body {
+
+    font-family: Courier;
+    background-color: bisque;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: beige;
+}
+
+.items-contact-info {
+    display: flex;
+    justify-self: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.items-contact-info i {
+    margin-right: 10px;
+}
+
+.contact-inf {
+    flex: 1;
+}
+
+.book-appointment {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.input-book-appointment {
+    margin: 8px 0px;
+}
+
+.book-appointment input {
+    width: 600px;
+    padding: 3px;
+    border-style: hidden;
+
+}
+
+.book-appointment textarea {
+    width: 600px;
+    border-style: hidden;
+}
+
+.btn-book-appointment {
+    margin-top: 10px;
+}
+
+.btn-book-appointment button {
+    border-radius: 4px;
+    background-color: aquamarine;
+
+}
+
+.heading1 {
+    position: relative;
+}
+
+.heading1-underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #febc46;
+}

@@ -1,0 +1,64 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.map {
+    margin: 20px 30px;
+}
+
+.list-map {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: fit-content;
+    border: 2px solid rgb(228, 189, 189);
+}
+
+.items-map a:hover {
+    background-color: rgb(111, 225, 152);
+    color: aliceblue;
+}
+
+.items-map a {
+    display: block;
+    padding: 10px 40px;
+    background-color: white;
+}
+
+.inner-map {
+    display: flex;
+    margin-top: 20px;
+}
+
+.info-map {
+    flex: 1;
+    background-color: bisque;
+}
+
+.google-map {
+    flex: 2;
+}
+
+
+.heading-title {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.content-map {
+    color: grey;
+    font-weight: bold;
+}
+
+.info-map li:nth-child(4) {
+    margin-top: 15px;
+}
+
+.email {
+    color: green;
+}

@@ -1,0 +1,43 @@
+.formaccess {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 40px;
+    background: linear-gradient(#e66465, #9198e5);
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 400px;
+
+}
+
+table th {
+    text-align: left;
+    font-weight: normal;
+}
+
+th label {
+    font-weight: normal;
+}
+
+.role-in-work {
+    display: flex;
+    flex-direction: column;
+}
+
+.signon-with {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-box {
+    margin-top: 30px;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+#btn-login {
+    margin-left: 200px;
+    margin-right: 20px;
+}

@@ -1,0 +1,35 @@
+.size-box {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(74, 119, 84);
+    margin: 0 auto;
+    margin-top: 40px;
+    width: fit-content;
+}
+
+.heading2 span {
+    color: aqua;
+}
+
+.heading2,
+.content-tag-p {
+    text-align: center;
+}
+
+.btn {
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+.box-btn {
+    margin: 0 auto;
+    width: fit-content;
+}
