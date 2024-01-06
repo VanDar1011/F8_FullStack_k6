@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -11,6 +15,15 @@ ul {
     margin: 20px 30px;
 }
 
+.info-map p {
+    margin-left: 40px;
+}
+
+.info-map p a[href="mailto:fullstack.edu@gmail.com"] {
+    color: #af9656;
+    text-decoration: underline;
+}
+
 .list-map {
     margin: 0px;
     padding: 0px;
@@ -20,7 +33,12 @@ ul {
 }
 
 .items-map a:hover {
-    background-color: rgb(111, 225, 152);
+    background-color: #6dca38;
+    color: aliceblue;
+}
+
+.items-map.active-map a {
+    background-color: #af9656;
     color: aliceblue;
 }
 
@@ -37,7 +55,7 @@ ul {
 
 .info-map {
     flex: 1;
-    background-color: bisque;
+    background-color: #f6f6f6;
 }
 
 .google-map {
@@ -55,9 +73,9 @@ ul {
     font-weight: bold;
 }
 
-.info-map li:nth-child(4) {
+/* .info-map li:nth-child(4) {
     margin-top: 15px;
-}
+} */
 
 .email {
     color: green;

@@ -26,14 +26,14 @@
                 </tr>
                 <tr>
                     <th> <label for="city">City of</label></th>
-                    <td> <input type="password" name="city" id="city"></td>
+                    <td> <input type="text" name="city" id="city"></td>
                 </tr>
                 <tr>
                     <th> <label for="employment">Employment</label></th>
                     <td> <input type="text" name="employment" id="employment"> </td>
                 </tr>
                 <tr>
-                    <th> <label for="webserver">Webserver</label></th>
+                    <th> <label for="webserver">--Webserver--</label></th>
                     <td>
                         <select name="webserver" id="webserver">
                             <option value="titleserver">-Choose a server</option>
@@ -44,37 +44,38 @@
                 </tr>
                 <tr>
 
-                    <th> Please specify your role</th>
+                    <th> Please specify<br> your role</th>
 
 
                     <td class="role-in-work">
-                        <label for="admin"> <input type="radio" name="yourrole" id="admin"> Admin</label>
-                        <label for="engineer"> <input type="radio" name="yourrole" id="engineer"> Engineer</label>
-                        <label for="manager"> <input type="radio" name="yourrole" id="manager"> Manager</label>
-                        <label for="guest"> <input type="radio" name="yourrole" id="guest"> Guest</label>
+                        <label for="admin"><input type="radio" name="yourrole-admin" id="admin"> Admin</label>
+                        <label for="engineer"><input type="radio" name="yourrole-engineer" id="engineer">
+                            Engineer</label>
+                        <label for="manager"><input type="radio" name="yourrole-manager" id="manager"> Manager</label>
+                        <label for="guest"><input type="radio" name="yourrole-guest" id="guest"> Guest</label>
                     </td>
 
                 </tr>
                 <tr>
                     <th>
-                        Single Sign-on to the following
+                        Single Sign-on<br> to the following
                     </th>
                     <td class="signon-with">
                         <label for="mail">
-                            <input type="checkbox" name="" id="mail">Mail
+                            <input type="checkbox" name="signon-with-mail" id="mail">Mail
                         </label>
                         <label for="payroll">
-                            <input type="checkbox" name="" id="payroll">Payroll
+                            <input type="checkbox" name="signon-with-payrol" id="payroll">Payroll
                         </label>
                         <label for="self-service">
-                            <input type="checkbox" name="" id="self-service">Self-service
+                            <input type="checkbox" name="signon-with-service" id="self-service">Self-service
                         </label>
                     </td>
                 </tr>
             </table>
             <!-- end table -->
             <div class="btn-box">
-                <button type="button" class="btn" id="btn-login">Login</button>
+                <button type="submit" class="btn" id="btn-login">Login</button>
                 <button type="reset" class="btn" id="btn-reset">Reset</button>
 
             </div>

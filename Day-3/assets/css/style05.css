@@ -2,14 +2,23 @@
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgb(74, 119, 84);
+    background-color: #8498cb;
     margin: 0 auto;
     margin-top: 40px;
     width: fit-content;
 }
 
-.heading2 span {
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading2 {
+    font-weight: normal;
+}
+
+.heading2>span {
     color: aqua;
+    font-weight: bold;
 }
 
 .heading2,
@@ -18,10 +27,13 @@
 }
 
 .btn {
-    background-color: aqua;
+    background-color: black;
+    color: white;
     border-radius: 5px;
     margin: 0 10px 0 10px;
     padding: 10px 20px;
+    outline: none;
+    border: none;
 }
 
 .btn:hover {
