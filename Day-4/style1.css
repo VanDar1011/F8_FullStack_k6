@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section1-footer {
+    height: max-content;
+    background-color: #334455;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+.heading2 {
+    font-size: 29px;
+}
+
+.heading2 span {
+    color: #ffa504;
+}
+
+.section1-footer p {
+    margin-bottom: 6px;
+    font-size: 19px;
+}
+
+.group-form {
+    width: 45%;
+}
+
+.form-subscrible .input-form {
+    padding: 8px 10px;
+    width: 45%;
+    border-radius: 4px;
+}
+
+.form-subscrible .btn-submit-form {
+    padding: 8px 10px;
+    width: 45%;
+    background-color: #f8db35;
+    color: black;
+    border-radius: 4px;
+    /* outline: none;
+    border: none; */
+}
+
+.footer:hover .input-form::placeholder {
+    color: #ffa504;
+}
+
+.footer:hover .form-subscrible .input-form {
+    background: #ddd;
+}
+
+.footer:hover .btn-submit-form {
+    background-color: #ffa504;
+    color: white;
+}

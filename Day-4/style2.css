@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.reserve-table {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.reserve-form {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.heading2.aim-form,
+.group-form :not(input[type="submit"]) {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.heading3.title-form,
+.group-form input[type="submit"] {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.heading2.aim-form {
+    text-align: center;
+    font-size: 35px;
+    color: #3a2616;
+}
+
+.heading3.title-form {
+    text-align: center;
+    font-size: 55px;
+    color: #392517;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.group-form input {
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+    border: 1px solid rgb(212, 205, 205);
+}
+
+.group-form input::placeholder,
+
+.group-form input[type="date"],
+.group-form input[type="time"] {
+    color: #352418;
+}
+
+.group-form input+input {
+    margin-left: 20px;
+}
+
+.group-form input[type="submit"] {
+    width: 333px;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #af322b;
+    color: white;
+    border: none;
+}
+
+.group-form+.group-form {
+    margin-top: 20px;
+}

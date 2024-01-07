@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đặt bàn</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="reserve-table">
+        <form class="reserve-form">
+            <h2 class="heading2 aim-form">RESERVE</h2>
+            <h3 class="heading3 title-form">Book your table</h3>
+
+            <div class="group-form">
+                <input type="text" name="name-guest" placeholder="NAME" required>
+                <input type="email" name="email-guest" placeholder="EMAIL" required>
+
+            </div>
+            <div class="group-form">
+                <input type="text" name="date" placeholder="DATE" onfocus="(this.type='date')"
+                    onblur="if(!this.value) this.type='text'" required>
+                <input type="text" name="time" placeholder="TIME" onfocus="(this.type='time')"
+                    onblur="if(!this.value) this.type='text'" required>
+            </div>
+            <div class="group-form">
+
+                <input type="number" min="1" name="quantity-peple" class="quantity-peple" placeholder="PEOPLE" required>
+                <!-- <button type="submit" name="btn-find-table" class="btn-find-table">Find A Table</button> -->
+                <input type="submit" value="Find A Table">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
