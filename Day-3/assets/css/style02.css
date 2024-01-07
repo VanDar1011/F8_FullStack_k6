@@ -4,7 +4,8 @@
 
 body {
     width: 100%;
-
+    margin: 0;
+    padding: 0;
 }
 
 .heading1-center {
@@ -14,14 +15,14 @@ body {
 
 }
 
-.heading1-center::before {
+.heading1-center::after {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 45%;
     bottom: -5px;
     display: inline-block;
-    width: 50px;
-    height: 2px;
+    width: 150px;
+    height: 4px;
     background: linear-gradient(.25turn, #e70808, #575868);
 }
 
@@ -44,6 +45,10 @@ body {
     margin-left: 15px;
 }
 
+.messege blockquote {
+    margin: 0;
+}
+
 .box-image {
     margin-top: 15px;
 }
@@ -54,7 +59,7 @@ body {
     width: 300px;
 }
 
-.item p:nth-child(2) {
+.item span {
     font-weight: bold;
 }
 

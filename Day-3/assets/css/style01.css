@@ -1,11 +1,12 @@
 ::-webkit-input-placeholder {
-    font-style: italic;
+    font-style: normal;
+    font-weight: bold;
 }
 
 body {
 
-    font-family: Courier;
-    background-color: bisque;
+    font-family: Verdana;
+    background-color: white;
 
 }
 
@@ -15,16 +16,18 @@ body {
 }
 
 .container {
-    width: 850px;
-    margin: 0 auto;
+    /* width: 850px;
+    margin: 0 auto; */
     padding: 20px;
-    background-color: beige;
+    /* background-color: beige; */
+    margin-left: 30px;
+    margin-right: 50px;
 }
 
 .items-contact-info {
     display: flex;
     justify-self: center;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 20px;
 }
 
@@ -32,29 +35,42 @@ body {
     margin-right: 10px;
 }
 
+.items-contact-info span a {
+    text-decoration: none;
+    color: black;
+}
+
 .contact-inf {
     flex: 1;
 }
 
-.book-appointment {
-    flex: 2;
-    margin-left: 20px;
+.contact-inf h2,
+.book-appointment h2 {
+    font-weight: normal;
 }
+
+.book-appointment {
+    flex: 2.5;
+    /* margin-left: 10px; */
+}
+
 
 .input-book-appointment {
     margin: 8px 0px;
 }
 
 .book-appointment input {
-    width: 600px;
-    padding: 3px;
-    border-style: hidden;
+    width: 100%;
+    padding: 5px;
+    /* border-style: hidden; */
 
 }
 
 .book-appointment textarea {
-    width: 600px;
-    border-style: hidden;
+    /* width: 600px; */
+    width: 100%;
+    padding: 5px;
+    /* border-style: hidden; */
 }
 
 .btn-book-appointment {
@@ -62,8 +78,11 @@ body {
 }
 
 .btn-book-appointment button {
-    border-radius: 4px;
-    background-color: aquamarine;
+    /* border-radius: 4px; */
+    background-color: #85DBDA;
+    padding: 10px 15px;
+    color: white;
+    border: none;
 
 }
 
@@ -77,7 +96,7 @@ body {
     left: 0;
     bottom: -5px;
     display: inline-block;
-    width: 50px;
-    height: 2px;
+    width: 70px;
+    height: 3px;
     background-color: #febc46;
 }

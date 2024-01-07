@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Liên Hệ</title>
-    <link rel="stylesheet" href="./assets/css/style01.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style01.css">
 </head>
 
 <body>
-    <section class="container">
+    <div class="container">
         <h1 class="heading1-underline heading1">CONTACT US</h1>
 
         <div class="contact">
@@ -18,21 +18,25 @@
                 <h2>Contact Info</h2>
                 <div class="items-contact-info">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span>321 Awesom Street NewYork, NV 172022 </span>
+                    <span>321 Awesom Street NewYork,<br> NV 172022 </span>
                 </div>
                 <div class="items-contact-info">
                     <i class="fa-regular fa-envelope"></i>
-                    <span>infor@companyname.com</span>
+                    <!-- <span>infor@companyname.com</span> -->
+                    <span><a href="mailto:infor@companyname.com">infor@companyname.com</a></span>
+
                 </div>
                 <div class="items-contact-info">
                     <i class="fa-solid fa-phone"></i>
-                    <span>+1 800 123 1234</span>
+                    <!-- <span>+1 800 123 1234</span> -->
+                    <span><a href="tel:+1 800 123 1234">+1 800 123 1234</a></span>
+
                 </div>
             </section>
             <!-- end contact-info -->
             <section class="book-appointment">
+                <h2>Having Any Query!Or Book an appoint</h2>
                 <form action="">
-                    <h2>Having Any Query!Or Book an appoint</h2>
                     <div class="input-book-appointment">
                         <input type="text" name="yourname" id="yourname" placeholder="Your Name">
                     </div>
@@ -50,8 +54,8 @@
                     </div>
                 </form>
             </section>
-            <!-- end book-appointment -->
-        </div>
+            <!-- end book-appointment
+    </div>
     </section>
 </body>
 
