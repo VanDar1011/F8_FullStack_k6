@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: "Lato";
+    src: url(../font/Lato-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url(../font/Lobster-Regular.ttf);
+    font-weight: 400;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.heading2.title {
+    font-family: "Lobster", sans-serif;
+    font-size: 3.5em;
+
+}
+
+.sendme-label {
+    color: #b3abab;
+}
+
+input,
+p,
+textarea,
+button,
+label,
+select {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+/* textarea {
+    resize: none;
+} */
+
+.container-form {
+    width: 700px;
+    padding: 50px;
+    margin: 0 auto;
+
+}
+
+.description-title {
+    margin-top: 44px;
+    font-size: 1.2em;
+}
+
+.description-title .red-description-title {
+    color: red;
+}
+
+.group-row {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.notification {
+    display: none;
+}
+
+.group-row input,
+.group-row select {
+    font-size: 1.3rem;
+    display: block;
+    padding: 5px 10px;
+    border: 2px solid #dddddd;
+    outline: none;
+    flex: 1;
+    height: 40px;
+}
+
+.group-row textarea {
+    font-size: 1.3rem;
+    display: block;
+    padding: 5px 10px;
+    border: 2px solid #dddddd;
+    outline: none;
+    flex: 1;
+}
+
+.group-row input::placeholder,
+.group-row textarea::placeholder,
+.group-row select {
+    color: #a5a5a5;
+}
+
+.img-input {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dddddd;
+}
+
+.img-input i {
+    color: white;
+}
+
+.fa-solid.fa-star,
+.fa-solid.fa-xmark,
+.fa-solid.fa-caret-up,
+.fa-solid.fa-caret-down {
+    display: none;
+    position: absolute;
+}
+
+.btn-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-form .send-btn {
+    padding: 4px 30px;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 1em;
+
+}
+
+.fa-solid.fa-star {
+    display: block;
+    top: 20px;
+    right: 20px;
+    color: #dddddd;
+
+}
+
+.group-row .fa-solid.fa-caret-down,
+.group-row .fa-solid.fa-caret-up {
+    display: block;
+    top: 0px;
+    right: 9px;
+    color: #bbbdca;
+    font-size: 2em;
+}
+
+.group-row .fa-solid.fa-caret-down {
+    top: 10px;
+    right: 9px;
+}
+
+.group-row:hover .img-input {
+    background: black;
+}
+
+.group-row input:focus~.img-input,
+.group-row select:focus~.img-input,
+.group-row textarea:focus~.img-input {
+    background: black;
+}
+
+.group-row input:focus~label.del-icon .fa-solid.fa-xmark,
+.group-row textarea:focus~label.del-icon .fa-solid.fa-xmark {
+    cursor: pointer;
+    color: #7e808c;
+    display: block;
+    top: 20px;
+    right: 20px;
+}
+
+.group-row select:focus~label.del-icon .fa-solid.fa-xmark {
+    cursor: pointer;
+    color: #7e808c;
+    display: block;
+    top: 12px;
+    right: 20px;
+}
+
+.group-row input:focus~.star-icon,
+.group-row select:focus~label .fa-solid.fa-caret-up,
+.group-row select:focus~label .fa-caret-down,
+.group-row textarea:focus~.star-icon {
+    display: none;
+}
+
+.group-row textarea:focus~.notification,
+.group-row input:focus~.notification {
+    position: absolute;
+    left: 30px;
+    top: -74px;
+    display: block;
+    padding: 20px 16px 30px;
+    background-color: #333;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 40% 80%, 30% 100%, 20% 80%, 0 80%);
+
+}
+
+
+
+.group-row:hover input,
+.group-row:hover textarea,
+.group-row:hover select,
+.group-row input:focus,
+.group-row textarea:focus,
+.group-row select:focus {
+    border: 2px solid black;
+    border-left: none;
+}
+
+.group-row:hover .fa-solid.fa-star,
+.group-row:hover .fa-solid.fa-caret-down,
+.group-row:hover .fa-solid.fa-caret-up {
+    color: #333;
+}

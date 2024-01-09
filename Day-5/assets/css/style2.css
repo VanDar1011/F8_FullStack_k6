@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: "Lato";
+    src: url(../font/Lato-Regular.ttf);
+    font-weight: 400;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Lato"
+}
+
+input {
+    display: none;
+}
+
+.header-content {
+    background-color: red;
+    color: white;
+    padding-left: 20px;
+}
+
+.label-content {
+    display: block;
+}
+
+.inner-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.heading2 {
+    font-size: 1.2em;
+    padding: 16px 24px;
+}
+
+.fa-sharp.fa-solid.fa-minus {
+    display: none;
+}
+
+.body-content {
+    display: none;
+    padding: 20px;
+}
+
+.open-content input {
+    display: none;
+}
+
+.open-content input:checked~.header-content i.fa-sharp.fa-solid.fa-minus {
+    display: block;
+}
+
+.open-content input:checked~.header-content i.fa-sharp.fa-solid.fa-plus {
+    display: none;
+}
+
+.open-content input:checked~.body-content {
+    display: block;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1 Buổi 5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style1.css">
+</head>
+
+<body>
+    <!-- container-form  -->
+    <div class="container-form">
+        <h2 class="heading2 title">
+            Hey there
+        </h2>
+        <p class="description-title">
+            <span class="red-description-title">
+                We'd like to hear from you.
+            </span>Send us your message or just say hy with our contact form or directly via phone, we love to chat
+        </p>
+        <!-- end title form -->
+        <!-- form -->
+        <form action="">
+            <div class="group-row">
+                <input type="text" name="name-user" id="name-user" placeholder="Your name">
+                <label for="name-user" class="img-input">
+                    <i class="fa-regular fa-user"></i>
+                </label>
+                <label for="name-user" class="star-icon">
+                    <i class="fa-solid fa-star"></i>
+                </label>
+                <label for="name-user" class="del-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="notification">
+                    Enter your Name
+                </div>
+            </div>
+            <!-- end input row 1 -->
+            <div class="group-row">
+                <input type="email" name="email-user" id="email-user" placeholder="Your@domain.com">
+                <label for="email-user" class="img-input">
+                    <i class="fa-regular fa-envelope"></i>
+                </label>
+                <label for="email-user" class="star-icon">
+                    <i class="fa-solid fa-star"></i>
+                </label>
+                <label for="email-user" class="del-icon"><i class="fa-solid fa-xmark"></i></label>
+                <div class="notification">
+                    Enter your email
+                </div>
+            </div>
+            <!-- end input row 2 -->
+            <div class="group-row">
+                <input type="tel" name="tel-user" id="tel-user" placeholder="+819412556">
+                <label for="tel-user" class="img-input">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </label>
+                <label for="tel-user" class="del-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="notification">
+                    Enter your telephone number
+                </div>
+            </div>
+            <!-- end input row 3 -->
+            <div class="group-row">
+                <select name="subject" id="subject">
+                    <option value="1">abc</option>
+                    <option value="2">abcd</option>
+                    <option value="3">abcde</option>
+                </select>
+                <label for="subject" class="img-input">
+                    <i class="fa-solid fa-spa"></i>
+                </label>
+                <label for="subject">
+                    <i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                </label>
+                <label for="subject" class="del-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <!-- end input row 4 -->
+            <div class="group-row">
+                <textarea id="message" cols="30" rows="10" placeholder="Message">
+                </textarea>
+                <label for="message" class="img-input">
+                    <i class="fa-solid fa-message"></i>
+                </label>
+                <label for="message" class="star-icon">
+                    <i class="fa-solid fa-star"></i>
+                </label>
+                <label for="message" class="del-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div class="notification">
+                    Enter your message
+                </div>
+            </div>
+            <!-- end input row 5 -->
+            <div class="btn-form">
+                <div class="checkbox-left">
+                    <input type="checkbox" name="sendme" id="sendme">
+                    <label for="sendme" class="sendme-label">Send me a copy of this message</label>
+                </div>
+                <button class="send-btn">SEND</button>
+            </div>
+
+        </form>
+
+    </div>
+    <!-- end container-form -->
+</body>
+
+</html>
