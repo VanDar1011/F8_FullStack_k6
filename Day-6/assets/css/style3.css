@@ -16,7 +16,8 @@ a {
 .background-container-login {
     width: 100vw;
     height: 100vh;
-    background: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg) no-repeat;
+    background-image: url("../images/login-bg2.jpg");
+    background-repeat: no-repeat;
     background-position: 0 -230px;
     background-size: cover;
     display: flex;
