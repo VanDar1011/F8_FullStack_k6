@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Asap;
+
+}
+
+.profile {
+    height: 340px;
+    background-color: white;
+    border-bottom: 3px solid #dcd9d9;
+}
+
+.head-profile {
+    background-image: url(../images/buding.png);
+    height: 85%;
+    position: relative;
+
+}
+
+.position-header {
+    top: 101%;
+    left: 5%;
+    position: absolute;
+    transform: translateY(-100%);
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.img-header {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.body-infor {
+    color: white;
+}
+
+.heading2 {
+    margin-top: -30px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.row-after-heading2 {
+    display: flex;
+    gap: 20px;
+}
+
+.nam,
+.value-project {
+    margin-left: 4px;
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.infor-profile {
+    display: flex;
+}
+
+.list-infor {
+    display: flex;
+}
+
+.list-infor {
+    margin-left: auto;
+    margin-right: 50px;
+    column-gap: 25px;
+}
+
+.list-infor a {
+    display: inline-block;
+    padding: 6px 0 12px 0;
+    color: black;
+    font-weight: 600;
+}
+
+.item:hover a {
+    color: rgb(172, 28, 28);
+    border-bottom: 3px solid rgb(172, 28, 28);
+}

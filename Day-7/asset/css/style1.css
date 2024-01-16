@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "sfu";
+    src: url(../fonts/SFUFuturaHeavy.TTF);
+    font-weight: 400;
+}
+
+div.banner {
+    height: 480px;
+    background-image: url("https://cdn.houseviet.vn/images/project/23042023/ha-noi-melody-residences-cover.jpg");
+    background-size: cover;
+    position: relative;
+    line-height: 0;
+}
+
+.content-banner {
+    padding-left: 20px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    position: absolute;
+    max-width: fit-content;
+    background-color: white;
+    opacity: 0.8;
+    font-family: "Asap", sans-serif;
+    top: 140px;
+    left: 180px;
+}
+
+.heading2.title-banner {
+    color: #bf4240;
+
+}
+
+p.description-title-banner {
+    line-height: 20px;
+    color: #3f3424;
+}
+
+span.adress {
+    font-weight: 400;
+}
+
+span.adress i {
+    opacity: 0.8;
+    color: black;
+}
+
+div.price-home {
+    font-family: "sfu", sans-serif;
+    font-weight: 400;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #bf4240;
+    top: 320px;
+    left: 600px;
+    border-radius: 4px;
+    color: white;
+    font-size: 22px;
+
+}
