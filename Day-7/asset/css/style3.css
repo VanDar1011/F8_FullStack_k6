@@ -53,6 +53,11 @@ body {
     cursor: pointer;
 }
 
+label.active {
+    background-color: #ae7d38db;
+    color: white;
+}
+
 label span {
     font-weight: 500;
 }
