@@ -27,6 +27,8 @@ body {
 .head-profile {
     background-image: url(../images/buding.png);
     height: 85%;
+    background-size: cover;
+    background-position: center bottom;
     position: relative;
 
 }
