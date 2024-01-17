@@ -1,0 +1,243 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background: #333;
+}
+
+div.shape {
+    top: 100px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background: #f00;
+}
+
+div.shape::before,
+.shape::after {
+    content: "";
+    /* z-index: 100; */
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: rgb(130, 86, 86);
+    border-radius: 50%;
+}
+
+div.shape::before {
+    top: 0;
+    left: -50%;
+}
+
+div.shape::after {
+    top: -50%;
+    left: 0;
+}
+
+*/
+/* Hình vuông: 
+div.shape {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+------------
+Hình chữ nhật
+div.shape {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+----------
+Hình tròn
+div.shape {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+-------------
+Hình oval
+div.shape {
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+Hình tam giác chiếu lên 
+div.shape {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid red;
+}
+---------------------
+Hình tam giác chiếu xuống thì thay border-bottom thành border-top,các mặt khác tương tự
+---------------------
+Hình tam giác góc top-left
+div.shape {
+    width: 0;
+    height: 0;
+    border-top: 100px solid red;
+    border-left: 100px solid red;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-right: 100px solid transparent;
+---
+width: 0;
+    height: 0;
+    border-top: 100px solid red;
+    border-right: 100px solid blue;
+    -- lienquan toi right-top,left-top
+}
+Hình dấu mũi tên
+.shape {
+    position: relative;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-right: 20px solid red;
+    border-top: 20px solid transparent;
+    transform: rotate(10deg);
+}
+
+.shape::before {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-top: 6px solid red;
+    border-radius: 20px 0 0 0;
+    top: -20px;
+    left: -20px;
+    width: 30px;
+    height: 20px;
+    transform: rotate(30deg);
+}
+------------
+Hình thang cân
+div.shape {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background: blue;
+    border: 50px solid transparent;
+    border-bottom: 50px solid red;
+}
+-------------
+Hình bình hành
+div.shape {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    transform: skewY(10deg);
+}
+--------
+Hình sao 6 cánh
+div.shape {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid red;
+    position: relative;
+}
+
+div.shape::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid red;
+    top: 15px;
+    left: -50px;
+}
+------------
+Hình ngôi sao 5 cánh
+div.shape {
+    width: 0;
+    height: 0;
+    margin: 200px;
+    border-bottom: 150px solid red;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: relative;
+}
+
+div.shape::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 70px solid red;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    top: 35px;
+    left: -100px;
+}
+
+div.shape::before {
+    z-index: 1;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: 45px solid white;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    top: 105px;
+    left: -100px;
+
+}
+--------------
+Hình thang có hình tam giác trên đầu
+div.shape {
+    margin-top: 100px;
+    position: relative;
+    box-sizing: content-box;
+    width: 40px;
+    border-width: 40px 20px 0;
+    border-style: solid;
+    border-color: red transparent;
+}
+
+div.shape::before {
+    content: "";
+    position: absolute;
+    border-bottom: 40px solid rgb(56, 164, 136);
+    border-left: 41px solid transparent;
+    border-right: 41px solid transparent;
+    left: -20px;
+    top: -81px;
+}
+-------------
+Hình trái tim
+
+div.shape {
+    left: 100px;
+    position: relative;
+    width: 100px;
+    height: 180px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+}
+
+div.shape::after {
+    content: "";
+    z-index: 1;
+    width: 100px;
+    height: 180px;
+    position: absolute;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(90deg);
+    left: 40px;
+    top: 40px;
+}
+----------------
+*/

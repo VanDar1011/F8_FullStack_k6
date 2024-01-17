@@ -1,0 +1,30 @@
+/* atribute selector
+ chọn html theo thuộc tính
+ - [tên thuộc tính] : chọn html có thuộc tính là tên thuộc tính
+*/
+/* ul li a[target="_blank"] {
+    text-decoration: none;
+    color: red;
+} */
+
+/* - [tên thuộc tính=giá trị] : chọn html có thuộc tính với giá trị cho trước */
+/* ul li a[target="_self"] {
+    text-decoration: none;
+    color: red;
+} */
+
+/* ul li a[href$=".vn/"] {
+    text-decoration: none;
+    color: red;
+} */
+
+/* bài tập : chọn các thẻ html có class bắt đầu bàng tiêu đề và nằm sau thẻ h1 */
+.content h1~*[class^="title"] {
+    color: red;
+}
+
+/* chọn tất cà các thẻ html * 
+ví dụ : chọn tất cả html nằm trong content*/
+/* .content *[class^="title"] {
+    color: blue;
+} */

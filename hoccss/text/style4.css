@@ -1,0 +1,26 @@
+div.content {
+    /* word-wrap: break-word; */
+    word-break: break-all;
+    /* word-wrap : ngắt từ , word-break: ngắt cả dòng */
+}
+
+/* text-algin: center căn chỉnh
+left, center, right, justify
+chỉ áp dụng cho các thẻ block, bên trong chỉ là văn bản
+ */
+div.content p {
+    text-indent: 20px;
+}
+
+div.content {
+    text-align: center;
+    text-align-last: right;
+}
+
+.links {
+    text-align: center;
+}
+
+div.image {
+    text-align: center;
+}

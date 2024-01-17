@@ -1,0 +1,19 @@
+/* thuộc tính filter
+tạo ra bộ lọc thay đổi màu sắc của thành phần
+*/
+div.map {
+    border: 1px solid black;
+    width: 100%;
+    /* filter: grayscale(1); */
+    /* filter: blur(0.5px); */
+    /* filter: opacity(1); */
+    filter: hue-rotate(90deg);
+    opacity: 1;
+    filter: grayscale(42%) sepia(27%) blur(4px) hue-rotate(161deg);
+    -webkit-filter: grayscale(42%) sepia(27%) blur(4px) hue-rotate(161deg);
+    -moz-filter: grayscale(42%) sepia(27%) blur(4px) hue-rotate(161deg);
+}
+
+/* div.map:hover { 
+    filter: opacity(0.5);
+} */

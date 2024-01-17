@@ -1,0 +1,41 @@
+/* thuộc tính bordern 
+border-width 1gt,2gt,3gt,4gt
+border-style
+border-color
+border:width style color
+tim hieu
+width
+height
+max-height,max-width
+min-height,min-width
+overflow
+filter
+opacity
+inline:none-replace,replace(key)
+img set w,h
+*/
+div.box {
+    height: 50px;
+    /* border-width: 3px 4px 5px;
+    border-style: solid dashed double;
+    border-color: aquamarine rebeccapurple red;
+    border: 2px solid red;
+    border-top: 4px solid blue;
+    border-left: 3px dotted rgb(93, 216, 26); */
+    /* border-top-left-radius: 30px; */
+    border: 5px solid red;
+    border-radius: 0px 15px;
+    /* border-top-right-radius: 50px; */
+}
+
+
+/* 
+div.tamgiac {
+    width: 0px;
+    height: 0px;
+    border-bottom: 100px solid red;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 0;
+} */

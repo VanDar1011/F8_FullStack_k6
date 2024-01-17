@@ -1,0 +1,41 @@
+/* các thuộc tính định dạng text
+- color : thay đổi màu sắc
++ color : value
+ value : giá trị( tên tiếng anh), mã hexa, mã rgb, hsl
++ color opacity: độ trong suốt
+Lưu ý: trong các thuộc tinh css luôn có hai giá trị mặc định 
++ initial --> không phục về giá trị ban đầu của trình duyệt 
++ inherit --> kế thừa giá trị của thẻ cha 
+*/
+body {
+    color: green;
+}
+
+.title {
+    color: rgb(255, 0, 0);
+}
+
+.title::before {
+    content: "F8";
+    color: purple;
+}
+
+.title:hover::before {
+    color: currentColor;
+}
+
+/* .title:hover {
+    color: initial;
+} */
+
+.sub-title:hover {
+    color: inherit;
+}
+
+.sub-title {
+    color: rgba(255, 0, 0, 0.747);
+}
+
+.content {
+    color: rgba(0, 128, 0, 0.819);
+}

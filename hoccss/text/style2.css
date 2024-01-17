@@ -1,0 +1,43 @@
+/*
+Thuộc tính thay đổi font-size: thay đổi cỡ chữ
+1.Các đơn vị trong css
++ px : pixel
++ pt : 1pt= 1.3px
+2.Đơn vị tương đối
+- em : kế thừa theo thành phần cha
+- rem : kế thừa thành phần root( html)
+- % : theo cha
+- vh : view port height
+- vw: view port width
+- fr(grid css)
+*/
+/* html {
+    font-size: 62.5%;
+}
+
+.wrapper .content {
+    font-size: 1rem;
+}
+
+.wrapper .content p {
+    font-size: 2em;
+} */
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.wrapper {
+    font-size: 1.5em;
+}
+
+.wrapper .content {
+    font-size: 1.5em;
+}
+
+.wrapper .content p {
+    font-size: 1.5em;
+}

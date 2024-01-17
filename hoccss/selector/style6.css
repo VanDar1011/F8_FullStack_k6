@@ -1,0 +1,96 @@
+/* pseudo class
+cú pháp: selector:ten 
+- active
+- hover
+- checked
+- focus dùng cho form
+- disabled
+- not
+- first-child
+- last-child
+- fist-of-type
+- first-of-child
+- nth-of-child
+-nth-of-type
+*/
+.title:hover {
+    color: red;
+}
+
+.title:active {
+    color: blue;
+}
+
+.btn:focus {
+    background-color: aqua;
+}
+
+.input:focus {
+    box-shadow: 2px;
+
+}
+
+.register-form input:focus::placeholder {
+    color: red;
+}
+
+h2.sub-title:focus {
+    outline: 0;
+    border: 1px solid green;
+    width: fit-content;
+    color: palevioletred;
+}
+
+h2.sub-title:active {
+    /* outline: 0; */
+    /* border: 1px solid green; */
+    /* width: fit-content; */
+    /* color: palevioletred; */
+    font-size: 50px;
+}
+
+ul.todos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todos input:checked~span {
+    color: orange;
+}
+
+.todos input[disabled]~span {
+    color: rgb(197, 197, 14);
+}
+
+
+.todos input:disabled~span {
+    color: greenyellow;
+}
+
+/* .products h2:not(.sales) {
+    color: rgb(68, 189, 173);
+} */
+/* 
+.products h2:first-of-type {
+    color: green
+}
+
+/* .products h2:last-child {
+    color: red;
+} */
+
+/* .products h2:last-of-type {
+    color: red;
+}  */
+/* .products h2:nth-child(2n + 1) {
+    color: aqua;
+}
+
+.products h2:nth-child(2n + 2) {
+    color: rgb(113, 190, 62);
+} */
+
+.products h2:nth-of-type(2n + 1) {
+    color: rgb(113, 190, 62);
+}

@@ -1,0 +1,9 @@
+p {
+    color: red;
+}
+
+h1 {
+    color: green;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}

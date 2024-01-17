@@ -1,0 +1,66 @@
+/* pseudo element : phần tử giả
+cú pháp selector:: element
+- before
+- after
+- first-lêtter
+- first-line
+- selection
+- placeholder
+*/
+/* .title {
+    position: relative;
+} */
+/* vễ xem lại  
+.title::after {
+    content: "";
+    margin-right: 10px; 
+     display: block;
+    position: absolute; 
+     top: 30px; 
+border: 2px solid red;
+width: 50px;
+}
+
+*/
+.title::after {
+    content: "";
+    /* margin-right: 10px; */
+    display: block;
+    /* position: absolute; */
+    /* top: 30px; */
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 4px;
+    background: red;
+    margin: 0 auto;
+    translate: -160%;
+}
+
+/* .title::after {
+    content: "b";
+    margin-left: 10px;
+} */
+p::first-line {
+    color: red;
+}
+
+
+
+p::selection {
+    color: white;
+    background-color: green;
+}
+
+p::first-letter {
+    color: blue;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: black;
+    font-weight: bold;
+}

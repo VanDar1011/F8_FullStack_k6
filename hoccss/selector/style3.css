@@ -1,0 +1,48 @@
+/*1. chọn thành phần đứng sau ~
+- ngang hàng
+- cùng thuộc một cha
+2.chọn thành phần liền kề sử dụng: + 
+- ngang hàng
+- cùng thuộc một cha
+*/
+ul~h2 {
+    color: red;
+}
+
+ul+h2 {
+    color: green;
+}
+
+.todos label {
+    display: block;
+}
+
+.todos input:checked~span {
+    text-decoration: line-through;
+}
+
+/* .todos input:checked+span {
+    text-decoration: line-through;
+} */
+/* 1.chọn thẻ văn đạt 02 */
+/* .box p+h2+h2 {
+    color: red;
+} */
+
+/* 2.chọn thẻ h2 từ văn đạt 02 đến hế */
+/* .box p+h2~h2 {
+    color: blue;
+}
+
+.box h2+h2 {
+    color: green;
+} */
+
+/* 3. chọn thẻ văn đạt 1 vs 2 
+chọn gộp selector
+selector1, selector2,selector3,..
+*/
+.box p+h2,
+.box p+h2+h2 {
+    color: pink;
+}

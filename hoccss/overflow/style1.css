@@ -1,0 +1,15 @@
+/* thuộc tính overflow xử lí nội dung bị tràn 
+- visible: nhìn thấy
+- auto: tạo thanh cuộn khi nội dung bj tràn
+*/
+.box {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.box p {
+    width: 400px;
+}
