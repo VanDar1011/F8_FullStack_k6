@@ -64,7 +64,7 @@ a {
     visibility: inherit;
 }
 
-.list-nav .item-nav:last-child:hover span {
+.list-nav .item-nav:hover span {
     opacity: 0.6;
 }
 

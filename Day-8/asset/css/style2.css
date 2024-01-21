@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Nunito", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: #7f7f7f;
+    visibility: hidden;
+}
+
+.icon-cart {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    font-size: 5.5em;
+    transform: translate(-50%, -50%);
+}
+
+.content-cart {
+    padding: 12px 24px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    background: #fff;
+    transform: translateX(100%);
+    transition: .25s;
+}
+
+.overlay-cart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #423b3b3b;
+}
+
+.clear {
+    cursor: pointer;
+    position: absolute;
+    color: red;
+    font-size: 1.6em;
+    top: 17px;
+    right: 40px;
+    z-index: 1;
+}
+
+.products {
+    margin-top: 50px;
+}
+
+.row-cart {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    border-bottom: 2px solid #afa6a654;
+    padding: 20px 0;
+    margin-right: -24px;
+    margin-left: -24px;
+    position: relative;
+
+}
+
+.div-img-product {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(222, 235, 139, 0.338);
+}
+
+.img-product {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.heading2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.heading2::after {
+    position: absolute;
+    content: "4";
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    color: #fff;
+    top: -5px;
+    right: 240px;
+
+}
+
+.row-infor-product {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    margin-top: 24px;
+}
+
+.row-cart::after {
+    font-family: "fontawesome";
+    content: "\f00d";
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    color: #888888;
+
+
+}
+
+.amount,
+.name-product {
+    color: #888888;
+}
+
+
+.amount::before,
+.amount::after {
+    font-family: "fontawesome";
+    color: #888888;
+    font-size: .6rem;
+
+}
+
+.amount::before {
+    content: "\f068";
+    margin-right: 15px;
+}
+
+.amount::after {
+    content: "\2b";
+    margin-left: 15px;
+
+}
+
+.amount {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #888888;
+    border-radius: 999px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.text-subtotal {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.sum-values {
+    font-weight: 700;
+    color: #ef7954;
+}
+
+.description-cart {
+    margin-top: 18px;
+    color: #c3c3c3;
+}
+
+.btn {
+    margin-top: 24px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px;
+    color: #a3a0a0;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #aaa7a7;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.add-cart {
+    background-color: blue;
+    border-color: blue;
+    color: #fff;
+}
+
+.shipping {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-ship {
+    border: 2px solid #abb9f9;
+    border-radius: 50%;
+}
+
+.icon-ship i {
+    padding: 6px;
+    font-size: 2em;
+    color: #abb9f9;
+}
+
+.text-shipping {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+input:checked~.inner-cart .content-cart {
+    transform: translateX(0);
+}
+
+input:checked~.inner-cart .overlay {
+    visibility: visible;
+}
