@@ -1,0 +1,202 @@
+/* common */
+
+.container {
+     width: 1170px;
+     margin: 0 auto;
+}
+
+html {
+     font-size: 62.5%;
+}
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, Oxygen, Ubuntu,
+          Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+
+}
+
+/* best-seller */
+
+/* .best-seller {
+     padding: 28px 0;
+}
+
+.heading-lv1 {
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+     font-weight: 700;
+     font-size: 5.0rem;
+} */
+
+/* .best-seller__row {
+     display: flex;
+     justify-content: center;
+} */
+
+/* .best-seller__list {
+     margin: 18px auto 0;
+     display: inline-flex;
+     column-gap: 4px;
+
+
+} */
+
+/* .best-seller__item label {
+     cursor: pointer;
+     padding: 20px 24px;
+     min-width: 170px;
+     text-align: center;
+     background: #f5f5f5;
+     font-weight: 500;
+     display: inline-block;
+     font-size: 1.3rem;
+     text-decoration: none;
+     color: #5e5959;
+} */
+
+/* input[id="skincare"]:checked ~ .best-seller__row .best-seller__list label[for="skincare"],
+input[id="haircare"]:checked ~ .best-seller__row .best-seller__list label[for="haircare"],
+input[id="cosmetics-cases"]:checked  ~ .best-seller__row .best-seller__list label[for="cosmetics-cases"],
+input[id="fragrance"]:checked  ~ .best-seller__row .best-seller__list label[for="fragrance"],
+input[id="makeup"]:checked ~ .best-seller__row .best-seller__list label[for="makeup"]
+{
+     color: #fff;
+     background-color: #29388e;
+} */
+/* .products__list {
+     margin-top: 100px;
+     display: flex;
+     gap: 40px;
+} */
+
+
+/* .products__items {
+     flex: 1;
+     overflow: hidden;
+     background: transparent;
+
+} */
+
+/* .products__items__imgs {
+     display: flex;
+} */
+
+/* .products__items__imgs img {
+     object-fit: cover;
+     flex-shrink: 0;
+     width: 100%;
+     height: 450px;
+     border-radius: 40px 40px 0px 0px;
+     transition: 0.25s;
+} */
+
+/* .cta-btn {
+     visibility: hidden;
+     position: relative;
+     top: -128px;
+     background: transparent;
+}
+
+.cart__row {
+     display: flex;
+     gap: 10px;
+}
+
+.cart__row button i {
+     color: #fff;
+} */
+
+/* .cart__row button {
+     cursor: pointer;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex: 1;
+     outline: none;
+     border: none;
+     background: #29388e;
+} */
+
+/* .cta-btn .add-card {
+     margin-top: 18px;
+
+} */
+
+/* .cta-btn .add-card button {
+     cursor: pointer;
+     padding: 20px;
+     outline: none;
+     border: none;
+     display: block;
+     width: 100%;
+     text-align: center;
+     background: #29388e;
+     color: #fff;
+     font-size: 1.6rem;
+} */
+
+/* .products__items__body {
+     padding: 20px 12px;
+     margin-top: -60px;
+} */
+
+/* .products__items__body .reviews {
+     display: flex;
+     justify-content: center;
+     column-gap: 5px;
+} */
+
+/* .products__items__body__desc {
+     margin-top: 18px;
+     text-align: center;
+     color: #7c7c7c;
+     font-weight: 500;
+     font-size: 1.6rem;
+}
+
+.products__items__body .values {
+     margin-top: 18px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.products__items__body .values span {
+     font-weight: 500;
+     color: #000;
+     font-size: 2.0rem;
+}
+
+.products__items:hover .cta-btn {
+     visibility: visible;
+} */
+
+
+/* .products__items:hover {
+     cursor: pointer;
+     box-shadow: 0px 12px 74px rgba(91, 91, 91, 0.25);
+     border-radius: 40px 40px 20px 20px;
+} */
+
+.products__items:hover .products__items__imgs img {
+     transform: translateX(-100%);
+}
+
+.products__list {
+     display: none;
+}
+
+input[id="skincare"]:checked~.products__list:nth-child(8),
+input[id="haircare"]:checked~.products__list:nth-child(9),
+input[id="cosmetics-cases"]:checked~.products__list:nth-child(10),
+input[id="fragrance"]:checked~.products__list:nth-child(11),
+input[id="makeup"]:checked~.products__list:nth-child(12) {
+     display: flex;
+}

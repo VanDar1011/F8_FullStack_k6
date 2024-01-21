@@ -176,14 +176,37 @@ input[id="makeup"]:checked~.nav-seller .list-best-seller label[for="makeup"] {
     transform: translateX(-100%);
 }
 
-.list-product {
+/* .list-product {
     display: none;
-}
+} */
 
-input[id="skincare"]:checked~.list-product:nth-child(8),
+/* input[id="skincare"]:checked~.list-product:nth-child(8),
 input[id="haircare"]:checked~.list-product:nth-child(9),
 input[id="cosmetics-cases"]:checked~.list-product:nth-child(10),
 input[id="fragrance"]:checked~.list-product:nth-child(11),
 input[id="makeup"]:checked~.list-product:nth-child(12) {
     display: flex;
+} */
+
+/* input[id="skincare"]:checked~div.list-product:nth-of-type(2),
+input[id="haircare"]:checked~.list-product:nth-of-type(3),
+input[id="cosmetics-cases"]:checked~.list-product:nth-of-type(4),
+input[id="fragrance"]:checked~.list-product:nth-of-type(5),
+input[id="makeup"]:checked~.list-product:nth-of-type(6) {
+    display: flex;
+} */
+
+/* input[id="skincare"]:checked~div:nth-of-type(2),
+input[id="haircare"]:checked~div:nth-of-type(3),
+input[id="cosmetics-cases"]:checked~div:nth-of-type(4),
+input[id="fragrance"]:checked~div:nth-of-type(5),
+input[id="makeup"]:checked~div:nth-of-type(6) {
+    display: flex;
+} */
+input[id="skincare"]:checked~.list-product {
+    background-color: red;
+}
+
+input[id="haircare"]:checked~.list-product {
+    background-color: rgb(69, 118, 128);
 }

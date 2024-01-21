@@ -16,7 +16,7 @@
 
 .heading2.aim-form,
 .group-form :not(input[type="submit"]) {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'BebasNeue', sans-serif;
 }
 
 .heading3.title-form,
@@ -64,6 +64,7 @@
     background-color: #af322b;
     color: white;
     border: none;
+    font-weight: bold;
 }
 
 .group-form+.group-form {
