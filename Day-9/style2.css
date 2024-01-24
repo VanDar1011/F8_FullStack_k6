@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.service {
+    margin-top: 50px;
+}
+
+.container-service {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.wrap-item-service {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    height: calc(309px - 70px);
+    transform: all .5s linear;
+}
+
+/* .title-item {
+    height: 30%;
+} */
+
+.wrap-item-service::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    inset: 0;
+    border: 2px solid #ededf0;
+    transition: all .2s linear;
+}
+
+.item-service {
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.item-service:hover {
+    background: url(./assets/img/metting.jpg);
+    background-size: cover;
+}
+
+.inner-item-service {
+    transition: transform .25s linear;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-service:hover .wrap-item-service {
+    background-color: #a2705a80;
+}
+
+.item-service:hover .wrap-item-service::before {
+    inset: 15px;
+    border-color: #664a3f80;
+
+}
+
+.fa-solid.fa-arrow-right {
+    transition: color .2s linear;
+}
+
+.item-service:hover .inner-item-service>i {
+    visibility: hidden;
+}
+
+.item-service:hover .inner-item-service .description-item {
+    color: #fff;
+}
+
+.item-service:hover .inner-item-service {
+    color: #fff;
+    transform: translateY(-60px);
+}
+
+.fa-solid.fa-arrow-right {
+    transition: color .2s linear;
+}
+
+.inner-item-service>i {
+    font-size: 3em;
+    color: #bc9789;
+    transition: visibility .1s linear;
+}
+
+.inner-item-service .title-item {
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    margin-top: 20px;
+    /* max-width: 80%; */
+}
+
+.inner-item-service .description-item {
+    color: #909093;
+    font-family: "Inter", sans-serif;
+    margin: 10px 0;
+    /* max-width: 80%; */
+}
+
+.row-item-service {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50px;
+    font-family: "Inter", sans-serif;
+}
+
+.row-item-service .icon-inner {
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #a2705a80;
+    border: none;
+}
+
+.row-item-service .icon-inner a i {
+    color: white;
+}
+
+.row-item-service:hover .fa-solid.fa-arrow-right {
+    color: black;
+}
+
+.row-item-service:hover .icon-inner {
+    background-color: #fff;
+}

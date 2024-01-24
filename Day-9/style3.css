@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+body,
+input,
+.heading2,
+select,
+textarea,
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.drop {
+    padding: 42px;
+}
+
+.heading2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.description-title {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #838690;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.form-group:not(.form-group:nth-child(3)) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.item-form-group {
+    width: 45%;
+    position: relative;
+}
+
+.form-group:nth-child(3) {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group:nth-child(3) .item-form-group {
+    width: 100%;
+}
+
+select {
+    width: 45%;
+    font-size: 1em;
+    display: block;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #b5b1b7;
+    box-shadow: 2px 2px 2px 2px #f1f0f0;
+    color: #757375bd;
+}
+
+.item-form-group .title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+    color: #75737579;
+    font-size: 1.1em;
+    transition: all 0.2s linear;
+
+}
+
+.form-group:nth-child(3) .title {
+    top: 25px;
+}
+
+input,
+textarea {
+    width: 100%;
+    font-size: 1em;
+    display: block;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #b5b1b7;
+    box-shadow: 2px 2px 2px 2px #f1f0f0;
+    color: #757375bd;
+    transition: border 0.2s linear;
+}
+
+.form-group+.form-group {
+    margin-top: 24px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 15px;
+}
+
+.cta {
+    margin-top: 18px;
+}
+
+.btn {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #fff;
+    background: #4d76d8;
+    border-radius: 990px;
+}
+
+.form-group input:valid~.title,
+.form-group input:focus~.title {
+    top: 16%;
+    font-size: 0.9em;
+}
+
+.form-group input:valid,
+.form-group input:focus {
+    border: 1px solid #928bd3;
+}
+
+.form-group textarea:valid,
+.form-group textarea:focus {
+    border: 1px solid #928bd3;
+}
+
+
+.form-group textarea:valid~.title,
+.form-group textarea:focus~.title {
+    top: 10px;
+    font-size: 0.9em;
+}

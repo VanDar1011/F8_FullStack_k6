@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Bài tập 3</title>
+</head>
+<div class="drop">
+    <div class="container">
+        <h2 class="heading2 title-drop">Drop Us a Line</h2>
+        <p class="description-title">
+            Reach out to us from our contact form and we will
+            get back to you shortly
+        </p>
+        <form action="" class="contact-form">
+            <div class="form-group">
+                <div class="item-form-group">
+                    <input type="text" name="firstname" id="firstname" required>
+                    <label for="firstname" class="title">First Name *</label>
+                </div>
+                <div class="item-form-group">
+                    <input type="text" name="lastname" id="lastname" required data-text="">
+                    <label for="lastname" class="title">Last Name *</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="item-form-group">
+                    <input type="email" name="email" id="email" required data-text="Email *">
+                    <label for="email" class="title">Email *</label>
+                </div>
+                <select name="option" id="option" required>
+                    <option value="0">Select a department</option>
+                    <option value="1">Sales</option>
+                    <option value="2">Marketing</option>
+                    <option value="3">Customer Support</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="item-form-group">
+                    <textarea name="message" id="message" cols="30" rows="10" required data-text="Message *"></textarea>
+                    <label for="message" class="title">Message *</label>
+                </div>
+            </div>
+            <div class="cta">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>
