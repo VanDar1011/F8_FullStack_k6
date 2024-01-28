@@ -93,11 +93,10 @@ body {
     background-color: black;
     transform: rotateX(85deg);
     box-shadow: 0 0 70px 15px rgba(0, 0, 0, 0.879);
-
-    transition: width 0.25s linear;
+    transition: 0.2s ease;
 }
 
-.letter:hover .shadow {
+.letter:hover+.shadow {
     width: 50px;
 }
 
