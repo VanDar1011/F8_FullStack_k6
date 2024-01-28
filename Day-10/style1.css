@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+input {
+    display: none;
+}
+
+.heading2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;
+    font-family: "Open Sans", sans-serif;
+}
+
+.burgermenu {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #05a8f5;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    clip-path: circle(5rem at left top);
+    background-color: #fff;
+    transition: all 0.25s linear;
+}
+
+.overlay .icon-menu {
+    font-size: 2em;
+    color: #05a8f5;
+}
+
+.overlay label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+
+}
+
+.description-title {
+    font-weight: 200;
+    margin-top: 18px;
+    margin-left: -18px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.text-inside {
+    font-size: 1.5em;
+}
+
+.nav-bar {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: transparent;
+}
+
+.list {
+    padding-top: 10px;
+}
+
+
+.item-menu,
+.item-close-menu {
+    padding: 10px 30px;
+}
+
+.item-close-menu {
+    padding-left: 10px;
+}
+
+.icon-left {
+    color: #05a8f5;
+    font-size: 1.5em;
+    rotate: 0deg;
+    transition: rotate 0.2s linear;
+}
+
+.item-menu {
+    color: #05a8f5;
+    font-weight: 500;
+}
+
+.item-menu label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+}
+
+input[id="open-menu"]:checked~.overlay label {
+    visibility: hidden;
+
+}
+
+input[id="open-menu"]:checked~.overlay {
+    clip-path: circle(200% at left top);
+
+}
+
+input[id="open-menu"]:checked~.nav-bar {
+    visibility: visible;
+}
+
+input[id="open-menu"]:checked~.nav-bar .icon-left {
+    rotate: 180deg;
+}
+
+input[id="home"]:checked~.item-home-menu,
+input[id="about"]:checked~.item-about-menu,
+input[id="portfolio"]:checked~.item-portfolio-menu,
+input[id="contact"]:checked~.item-contact-menu {
+    color: black;
+    background-color: #eeeeee;
+}
