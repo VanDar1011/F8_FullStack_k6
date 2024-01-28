@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #313642;
+}
+
+.container {
+    width: fit-content;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.letter {
+    width: 150px;
+    height: 70px;
+    background: #cf4a43;
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    width: 120px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    transform-origin: top;
+    transition: 0.2s ease;
+    transition-delay: 0.15s;
+
+}
+
+.top-letter {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    top: 0;
+    height: 9px;
+    overflow: hidden;
+}
+
+.top-letter span {
+    width: 8px;
+    height: 100%;
+    background-color: #CC5B63;
+    transform: skewX(-15deg);
+}
+
+.circle {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #F1CECE;
+}
+
+.two-row {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    gap: 4px;
+}
+
+.two-row span {
+    width: 35px;
+    height: 7px;
+    background-color: #CC5B63;
+
+}
+
+.two-row span:last-child {
+    width: 25px;
+    height: 7px;
+    background-color: #CC5B63;
+}
+
+.shadow {
+    height: 60px;
+    width: 100px;
+    border-radius: 99px;
+    background-color: black;
+    transform: rotateX(85deg);
+    box-shadow: 0 0 70px 15px rgba(0, 0, 0, 0.879);
+
+    transition: width 0.25s linear;
+}
+
+.letter:hover .shadow {
+    width: 50px;
+}
+
+.letter:hover .cover {
+    transform: rotateX(180deg);
+    z-index: -1;
+
+}
+
+.letter:hover .content {
+    transform: translateY(-30px);
+}
+
+.letter:not(:hover) .cover {
+    transition-delay: 0.4s;
+}
+
+.letter:hover {
+    transform: translateY(50px);
+}
+
+.letter-left {
+    width: 0;
+    height: 0;
+    border-bottom: 70px solid #e2514b;
+    border-right: 150px solid transparent;
+    position: relative;
+    bottom: 60px;
+    z-index: 2;
+}
+
+.letter-right {
+    width: 0;
+    height: 0;
+    border-bottom: 70px solid #e76057;
+    border-left: 150px solid transparent;
+    position: relative;
+    z-index: 2;
+}
+
+.cover {
+    width: 0;
+    height: 0;
+    border-top: 35px solid #cf4a43;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    position: relative;
+    bottom: 130px;
+    transform-origin: top;
+    transition: 0.2s ease;
+    z-index: 3;
+}
