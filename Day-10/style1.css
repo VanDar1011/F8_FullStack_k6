@@ -15,9 +15,9 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-input {
+/* input {
     display: none;
-}
+} */
 
 .heading2 {
     color: #fff;
@@ -36,7 +36,7 @@ input {
 .overlay {
     position: fixed;
     inset: 0;
-    clip-path: circle(5rem at left top);
+    clip-path: circle(5em at left top);
     background-color: #fff;
     transition: all 0.25s linear;
 }
@@ -134,10 +134,15 @@ input[id="open-menu"]:checked~.nav-bar .icon-left {
     rotate: 180deg;
 }
 
-input[id="home"]:checked~.item-home-menu,
+.item-menu label:focus {
+    color: black;
+    background-color: #eeeeee;
+}
+
+/* input[id="home"]:checked~.item-home-menu,
 input[id="about"]:checked~.item-about-menu,
 input[id="portfolio"]:checked~.item-portfolio-menu,
 input[id="contact"]:checked~.item-contact-menu {
     color: black;
     background-color: #eeeeee;
-}
+} */
