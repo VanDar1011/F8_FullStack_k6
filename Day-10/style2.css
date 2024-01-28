@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    background: #edefe9ec;
+}
+
+input {
+    display: none;
+}
+
+.wrap,
+.about-us {
+    width: 60%;
+    margin: 100px auto 0px auto;
+    background-color: #fff;
+}
+
+.wrap {
+    margin-top: 0;
+    overflow-x: auto;
+    transform-origin: left top;
+    transform: rotateX(0deg);
+}
+
+.about-list {
+    display: flex;
+}
+
+.item-about {
+    height: 70px;
+    text-align: center;
+}
+
+.item-about {
+    flex: 1;
+}
+
+.item-about+.item-about {
+    border-left: 1px solid #c2c4bf;
+    border-bottom: 1px solid #c2c4bf;
+}
+
+.item-about:first-child {
+    border-bottom: 1px solid #c2c4bf;
+}
+
+.item-about label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 18px 4px;
+    font-weight: 500px;
+    transition: background-color 0.2s linear;
+    transition-property: color;
+
+}
+
+.heading2 {
+    font-weight: 600;
+    font-size: 2.0em;
+}
+
+.infor {
+    width: 100%;
+    padding: 20px 0 0 20px;
+    box-sizing: content-box;
+}
+
+.description-heading2 {
+    line-height: 1.5em;
+}
+
+.infor-slideshow,
+.infor-levenshtein,
+.infor-progresso,
+.infor-php {
+    display: none;
+}
+
+input[id="slideshow"]:checked~.about-us .about-list label[for="slideshow"],
+input[id="levenshtein"]:checked~.about-us .about-list label[for="levenshtein"],
+input[id="progresso"]:checked~.about-us .about-list label[for="progresso"],
+input[id="php"]:checked~.about-us .about-list label[for="php"] {
+    background-color: #3498da;
+    color: #fff;
+}
+
+input[id="slideshow"]:checked~.wrap .infor-slideshow,
+input[id="levenshtein"]:checked~.wrap .infor-levenshtein,
+input[id="progresso"]:checked~.wrap .infor-progresso,
+input[id="php"]:checked~.wrap .infor-php {
+    display: block;
+}
+
+
+input[id="slideshow"]:checked~.wrap-slideshow,
+input[id="levenshtein"]:checked~.wrap-levenshtein,
+input[id="progresso"]:checked~.wrap-progresso,
+input[id="php"]:checked~.wrap-php {
+    animation: myrotate .7s linear;
+    transform-style: preserve-3d;
+
+
+}
+
+@keyframes myrotate {
+    0% {
+        transform: rotateX(-90deg);
+
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
