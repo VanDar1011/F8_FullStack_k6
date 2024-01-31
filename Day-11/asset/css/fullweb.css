@@ -350,6 +350,12 @@ header.header {
 }
 
 .container-service .item-service {
+    overflow: hidden;
+    border-radius: 12px;
+
+}
+
+.container-service .inner-item-service {
     width: 302px;
     height: 328px;
     padding: 5px;
@@ -359,7 +365,11 @@ header.header {
     justify-content: space-around;
     border-radius: 12px;
     background: #fff;
+    position: relative;
+    z-index: 1;
 }
+
+
 
 .item-service .icon-service {
     height: 60px;
@@ -380,6 +390,10 @@ header.header {
     margin-bottom: 15px;
 }
 
+.item-service {
+    position: relative;
+}
+
 .item-service .detail-service {
     text-align: center;
 }
@@ -394,7 +408,33 @@ header.header {
     line-height: 20px;
     font-size: 14px;
     margin: 0 auto;
+
 }
+
+.item-service .box-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 96%;
+    height: 328px;
+    background: #FE6A6A;
+    border-radius: 12px;
+    z-index: 0;
+    transform-origin: left top;
+    transition: transform 0.2s linear;
+}
+
+.item-service:hover {
+    overflow: visible;
+}
+
+.item-service:hover .box-hover {
+    transform: rotate(-3deg);
+    left: 38px;
+    top: 10px;
+
+}
+
 
 /* section 3  */
 .section-three {
