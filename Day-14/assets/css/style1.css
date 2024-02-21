@@ -118,7 +118,7 @@ a {
     width: 100%;
 }
 
-.item-list::before:hover {
+.item-list:hover::before {
     width: 100%;
 }
 
