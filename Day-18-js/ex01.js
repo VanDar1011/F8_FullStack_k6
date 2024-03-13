@@ -118,18 +118,18 @@ function numberToString(n) {
         stringNumber += `${units[hundred]} trăm `;
         if (ten == 0 && unit == 0) {
           //   stringNumber += ``;
-          console.log(stringNumber);
-          return;
+          //   console.log(stringNumber);
+          //   return;
         } else {
           if (ten > 0) {
             if (ten == 1) {
+              stringNumber += `mười `;
               if (unit == 0) {
-                stringNumber += `mười `;
-                return;
+                // return;
               } else {
-                stringNumber += `mười `;
-                stringNumber += `${unit[unit]}`;
-                return;
+                // stringNumber += `mười `;
+                stringNumber += `${units[unit]}`;
+                // return;
               }
             } else {
               stringNumber += `${units[ten]} `;
@@ -139,12 +139,14 @@ function numberToString(n) {
                 stringNumber += `mươi`;
               }
             }
-            stringNumber += `${units[ten]} `;
-          } else {
-            stringNumber += `linh `;
+            // stringNumber += `${units[ten]} `;
           }
-          if (unit > 0) {
-            stringNumber += `${units[unit]}`;
+          // co hang chuc
+          else {
+            stringNumber += `linh `;
+            if (unit > 0) {
+              stringNumber += `${units[unit]}`;
+            }
           }
         }
       }
@@ -180,7 +182,7 @@ function numberToString(n) {
         //else {
         //     stringNumber += `linh `;
         //   }
-      }
+      } // khong co hang tram
     }
     // khong co hang ngan
 
