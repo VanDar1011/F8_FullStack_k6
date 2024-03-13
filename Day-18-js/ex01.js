@@ -46,7 +46,7 @@ var reversed = "";
 for (var i = string_n.length - 1; i >= 0; i--) {
   reversed += string_n[i];
 }
-console.log(`Số ${n} đảo nguọcw thành ${reversed}`);
+console.log(`Số ${n} đảo ngược thành ${reversed}`);
 // bài tập chuyển số thành chữ
 function numberToString(n) {
   stringNumber = "";
@@ -108,7 +108,7 @@ function numberToString(n) {
         if (unit > 0) {
           stringNumber += `${units[unit]}`;
         } else {
-          stringNumber += `mười`;
+          stringNumber += `mươi`;
         }
       }
     }
@@ -191,7 +191,10 @@ function numberToString(n) {
     console.log("khongo dooi");
   }
 }
-for (var i = 0; i < 9999; i++) {
-  console.log(i);
-  numberToString(i);
-}
+// for (var i = 0; i < 9999; i++) {
+//   console.log(i);
+//   numberToString(i);
+// }
+numberToString(1);
+numberToString(100);
+numberToString(7090);
