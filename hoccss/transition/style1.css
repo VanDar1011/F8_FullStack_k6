@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.box {
+    border: 1px solid red;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.box h2 {
+    /* transition-property: padding-left, color, font-size;
+    transition-duration: 3s; */
+    /* transition-delay: 1s; */
+    /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+    transition: padding-left 2s 1s linear;
+}
+
+.box:hover h2 {
+    padding-left: 100px;
+    color: aqua;
+    font-size: 2em;
+}
+
+/* thuộc tính transition : thiết lập thời gian thay đổi giá trị của thuộc tính css( chỉ áp dụng với các giá trị là số 
+- transition-property: tên thuộc tính | all 
+- transition-duration: time+ unit(s|ms)
+- transition-delay: time + unit(s|ms)
+- transition-timing-function: ease: chậm nhanh chậm|linear: đều |ease-in: tốc độ tăng dần |ease-out:tốc độ giảm dần|ease-in-out: chậm nhanh chậm |cubic-bezier(n,n,n,n) chạy từ 0 -1 ( số càng lớn thì càng chậm, càng lớn càng nhanh  ) 
+- transition: property duration delay timing-function
+ */

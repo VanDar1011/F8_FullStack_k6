@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 1135px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.drop-line {
+    padding: 12px 0;
+}
+
+.heading.lv1 {
+    font-weight: 700;
+    font-size: 3.0rem;
+    text-align: center;
+}
+
+.desc {
+    margin-top: 24px;
+    text-align: center;
+    color: #838690;
+}
+
+.contact__form {
+    margin-top: 24px;
+}
+
+
+input,
+textarea,
+select {
+    width: 100%;
+    font-size: 1.1rem;
+    display: block;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #b5b1b7;
+    box-shadow: 2px 2px 2px 2px #f1f0f0;
+    color: #757375;
+}
+
+.form-group:not(.form-group:nth-child(3)) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group+.form-group {
+    margin-top: 24px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 15px;
+}
+
+.cta {
+    margin-top: 18px;
+}
+
+.btn {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #fff;
+    background: #4d76d8;
+    border-radius: 990px;
+}
+
+.form-group__items {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+    color: #757375;
+    font-size: 1.1rem;
+    transition: all 0.2s linear;
+}
+
+.form-group:nth-child(3) .title {
+    top: 25px;
+}
+
+.form-group input:valid~.title,
+.form-group input:focus~.title {
+    top: 16%;
+    font-size: 0.9rem;
+}
+
+.form-group textarea:valid~.title,
+.form-group textarea:focus~.title {
+    top: 10px;
+    font-size: 0.9rem;
+}

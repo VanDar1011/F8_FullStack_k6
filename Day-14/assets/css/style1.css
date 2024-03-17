@@ -260,6 +260,47 @@ a {
     grid-area: tall4;
 }
 
+@media screen and (max-width: 1199.98px) {
+    .nav-lists-header {
+        display: none;
+    }
 
+    input.overlay:checked~.nav-lists-header {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        /* opacity: 0.5; */
+        width: 300px;
+        background-color: black;
+    }
+
+    input.overlay:checked~.nav-lists {
+        display: block;
+        margin-top: 50px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        /* opacity: 1; */
+    }
+
+    input.overlay:checked~.nav-lists .item-list a {
+        color: white;
+        gap: 20px
+    }
+
+    .header label.menu-bar {
+        margin-left: auto;
+        display: inline-block;
+    }
+}
+
+@media screen and(max-width: 991.98px) {}
+
+@media screen and(max-width: 767.98px) {}
+
+@media screen and(max-width: 575.98px) {}
 
 /* end product  */

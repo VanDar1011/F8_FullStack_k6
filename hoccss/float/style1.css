@@ -1,0 +1,74 @@
+/* lí thuyết float
+ float giúp trôi các thành phần html về bên trái, bên phải thành phần của cha của nó
+ + none
+ + left
+ + right
+ clear : ngan tình trạng trôi thành phần
+ + left: ngăn trôi về bên trái
+ + right: ngăn trôi về bên phải
+ + both: ngăn trôi
+ Lưu ý chỉ hoạt động với thẻ block
+ kĩ thuật clearfix
+ - kết hợp tất cả thuộc tính css lại để giải quyết bài toán chia layout bằng float hoặc clear
+
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    border: 0;
+}
+
+.row {
+    width: 80%;
+    margin: 30px auto;
+    border: 1px solid red;
+    /* overflow: auto; */
+    /* background-color: yellow;
+    color: green; */
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-1 {
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    color: green;
+    float: right;
+    /* margin-right: 30px; */
+}
+
+.col-2 {
+    width: 100px;
+    height: 120px;
+    background-color: gray;
+    opacity: 0.5;
+    color: green;
+    float: right;
+}
+
+.col-3 {
+    width: 80px;
+    height: 100px;
+    background-color: pink;
+    color: green;
+    float: right;
+    opacity: 0.4;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.text {
+    /* width: 500px; */
+    /* display: block; */
+    background-color: yellow;
+    /* clear: both; */
+    /* clear: right; */
+}

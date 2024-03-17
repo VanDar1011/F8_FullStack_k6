@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.song {
+    width: 300px;
+    border: 1px solid red;
+    margin: 30px auto;
+    padding: 15px;
+    counter-reset: song-couter;
+}
+
+.song-item {
+    border-bottom: 1px solid #ececec;
+    padding: 15px 0;
+    /* display: list-item;
+    list-style: decimal-leading-zero inside; */
+    counter-increment: song-couter;
+}
+
+
+.song-item .children {
+    background-color: pink;
+    padding: 10px;
+    counter-reset: song-child;
+}
+
+.song-item .children p {
+    counter-increment: song-child;
+    margin-bottom: 5px;
+}
+
+.song-item .children p::before {
+    content: counter(song-couter) "." counter(song-child);
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: #ececec;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.song .song-item::before {
+    content: "#" counter(song-couter);
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: green;
+    float: left;
+    color: #ececce;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.xmark-icon {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text::before {
+    content: "\f0ac";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 800;
+
+}

@@ -1,0 +1,23 @@
+/* box-sizing
+mặc định theo content
+- border-box
+reset
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: 0;
+    outline:0;
+    border:0;
+}
+*/
+.box {
+    border: 15px solid red;
+    outline: 2px solid blue;
+    /* overflow: scroll; */
+    width: 200px;
+    height: 300px;
+    padding: 35px;
+    margin: 30px;
+    box-sizing: border-box;
+}

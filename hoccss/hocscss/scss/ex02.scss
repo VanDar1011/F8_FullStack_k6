@@ -1,0 +1,47 @@
+ // kế thừa
+ //1. kế thừa theo selector
+
+ //2. kế thừa theo placehoder
+ //ex:
+//  %section-base{
+//     width: 1000px;
+//     margin: 30px auto;
+//  }
+ // 
+ //3. kế thừa theo mixin
+ @mixin section-base($width,$space:0){
+    width: $width;
+    margin: $space auto;
+ }
+ @mixin container($width){
+ .container {
+        padding: 0;
+        @include section-base(1200px,20px);
+    }
+ }
+ @include container((1200px));
+//  %section-base{
+//     width: 1000px;
+//     margin: 30px auto;
+//  }
+// .box{
+//     width: 1000px;
+//     margin: 30px auto;
+// }
+.post{
+    background-color: gray;
+    @include section-base(1000px,20px);
+    @include container(100px);
+    // @extend %section-base;
+
+}
+.products{
+    // @extend %section-base;
+    box-shadow: 3px 3px 5px #ccc;
+    @include section-base(1200px);
+}
+.courses{
+    padding:  30px;
+    width: 1000px;
+
+}

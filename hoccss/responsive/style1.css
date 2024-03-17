@@ -1,0 +1,177 @@
+/* 1.responsive 
+thiết kế web thích ứng 
+sử dung kích thước màn hình để thay đổi giao diện \
+có hai hình thức xây dựng web thích ứng : responsive,adaptive
+2.breakpoint: diểm dừng tại đó giao diện thay đổi 
+- không có breakpoint cố định cho tất cả các dự án 
+- chỉ có các breakpoint phổ biến --> triển khai các breakpoint riêng cho từng dự án 
+- nên thao khảo các css frameword để chọn ra các breakpoint phổ biến 
+- các breakpoint phổ biến
++ 576px
++ 768px
++ 992px
++ 1200px 
++ 1400px
+- view port 
+- queries media ( at-rules css : cho phép kiểm tra màn hình trước khi css) 
+
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* @media all|screen|print and(min-width: value) and(max-width:value) {
+    body {
+        color: red;
+    }
+    2 trường phát responsive 
+    2.1 Destop first: ưu tiên giao diện màn hình lớn trước,các màn hình nhỏ hơn đưa vào media queries
+    @media screen and( max-width: 1399.98px){
+        code css
+    }
+        @media screen and( max-width: 1199.98px){
+        code css
+    }
+        @media screen and( max-width: 991.98px){
+        code css
+    }
+        @media screen and( max-width: 767.98px){
+        code css
+    }
+        @media screen and( max-width: 575.98px){
+        code css
+    }
+    2.2 Mobile first: ưu tiên giao diện màn hình nhỏ trước,các màn hình lớn hơn đưa vào media queries
+    @media screen and( min-width: 576px){
+        code css
+    }
+        @media screen and( min-width: 768x){
+        code css
+    }
+        @media screen and( min-width: 992px){
+        code css
+    }
+        @media screen and( min-width: 1200px){
+        code css
+    }
+        @media screen and( min-width: 1400px){
+        code css
+    }
+    cross brower testing : test responsive
+    Gutter khoang cach giua cac cot 
+    .g-0
+    .g-1
+    .g-2
+    .g-3
+    .g-4
+    .g-5
+
+    .gx-0
+    .gx-1
+    .gx-2
+    .gx-3
+    .gx-4
+    .gx-5
+
+    .gy-0
+    .gy-1
+    .gy-2
+    .gy-3
+    .gy-4
+    .gy-5
+    cú pháp chung
+    .g-{size}
+    .gx-{size}
+    .gy-{size}
+    .g-{breakpoint}-{size}
+    .gx-{breakpoint}-{size}
+    .gy-{breakpoint}-{size}
+    size 0 -5 
+    breakpoint: sm, md, lg, xl, xxl
+
+    ##offset
+cú pháp chung
+    breakpoint: sm, md, lg, xl, xxl
+    number: 1- 12
+    .col-offset-{number}
+    ex:
+
+    .col-{breakpoint}-offset-{number}
+} */
+.col-offset-1 {
+    margin-left: calc(100% / 12 * 1);
+}
+
+.col-offset-2 {
+    margin-left: calc(100% / 12 * 2);
+}
+
+.col-offset-3 {
+    margin-left: calc(100% / 12 * 3);
+}
+
+.col-offset-4 {
+    margin-left: calc(100% / 12 * 4);
+}
+
+.col-offset-5 {
+    margin-left: calc(100% / 12 * 5);
+}
+
+.col-offset-6 {
+    margin-left: calc(100% / 12 * 6);
+}
+
+.col-offset-7 {
+    margin-left: calc(100% / 12 * 7);
+}
+
+.col-offset-8 {
+    margin-left: calc(100% / 12 * 8);
+}
+
+.col-offset-9 {
+    margin-left: calc(100% / 12 * 9);
+}
+
+.col-offset-10 {
+    margin-left: calc(100% / 12 * 10);
+}
+
+.col-offset-11 {
+    margin-left: calc(100% / 12 * 11);
+}
+
+.col-offset-12 {
+    margin-left: calc(100% / 12 * 12);
+}
+
+
+.box {
+    border: 1px solid red;
+    padding: 30px;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 1199px) {
+    .box {
+        background-color: aquamarine;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        border: none;
+    }
+
+}
+
+@media screen and (max-width: 575.98px) {
+    .box h2 {
+        display: none;
+    }
+
+}

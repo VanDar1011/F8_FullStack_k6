@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../html"
+		},
+		{
+			"path": "../../../git xuan anh/day_10"
+		},
+		{
+			"path": "../../../git xuan anh/day_11/assets"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "F8_Fullstack_Offline"
+	}
+}

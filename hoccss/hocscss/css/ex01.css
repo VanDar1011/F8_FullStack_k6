@@ -1,0 +1,64 @@
+:root {
+  --secondary-color:red;
+}
+
+body {
+  color: red;
+  background: red;
+}
+
+.heading2 {
+  color: var(--secondary-color);
+  box-shadow: 1px 1px 1px red;
+}
+
+.header {
+  padding: 30px 0;
+  box-shadow: 3px 3px 5px #ccc;
+}
+.header .topbar {
+  background-color: yellow;
+}
+.header .topbar .left {
+  list-style: none;
+}
+.header .topbar .left a {
+  text-decoration: none;
+}
+.header .topbar .right {
+  color: brown;
+}
+
+.menu > ul ~ li::before {
+  content: "";
+}
+.menu > ul ~ li + a {
+  color: #444;
+}
+.menu > ul ~ li + a:hover {
+  color: green;
+}
+.menu > ul ~ li + a:hover::before {
+  content: "";
+}
+
+ul.list {
+  list-style: none;
+}
+
+.box {
+  color: red;
+  background-color: green;
+  font-size: 16px;
+  font-size: 16%;
+}
+
+.col-1 {
+  width: 200px;
+}
+
+.col-2 {
+  width: 200px;
+}
+
+/*# sourceMappingURL=ex01.css.map */

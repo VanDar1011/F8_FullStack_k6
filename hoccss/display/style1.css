@@ -1,0 +1,55 @@
+/* display:thay đổi chế độ hiển thị của thẻ html
+- none : ẩn thẻ html
+- block : hiển thị dạng block
+- inline: hiển thị dạng inline
+- inline-block: kết hợp inline và block
+Các giá trị phức tạp ta học sau
+- flex
+- inline-flex
+- inline-grid
+- table
+- grid
+- list-item
+Ẩn hiện element 
+- Phân biệt ẩn giữ không gian và ẩn mất không gian
+- Phân biệt ẩn và làm mờ(tàng hình)
+Ul ( unorder list)
++ list-style-type: none/ disc/square/circle/decimal/decimal-leading-zero/upper-alpha/lower-alpha/upper-roman/lower-roman
++ list-style-position: inside/outside
++ list-style-image:thay biểu tượng bằng ảnh, không nên dùng, không chỉnh kich thước được
+-> thay thế bằng back ground
++ list-style: position type image
+
+ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+}
+
+/* .box {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 20px;
+} */
+
+.content:hover .box {
+    /* display: none; */
+    /* visibility: hidden; */
+    /* opacity: 0; */
+}
+
+.box {
+    width: 300px;
+    margin: 30px auto;
+    border: 1px solid rgb(230, 23, 23);
+}
+
+.box ul {
+    /* list-style-type: decimal;
+    list-style-position: inside; */
+    list-style: inside none;
+}

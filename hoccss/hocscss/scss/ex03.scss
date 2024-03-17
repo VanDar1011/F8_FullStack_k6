@@ -1,0 +1,96 @@
+// câu lệnh rẽ nhánh
+$number:1;
+@if $number == 1{
+$size: 20;
+    .box{
+        width: 100px;
+        height: 100px;
+        @if $size== 100 {
+            background-color: green;
+        } @else {
+            background-color: red;
+        }
+    }
+}
+@else if $number == 2{
+    .container{
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+} 
+@else {
+    .products  {
+        background:blue;
+    }
+}
+// Vòng lặp 
+// 1. for through 
+// @for $index from 1 through 12 {
+//     .col-#{$index}{
+//         max-width:calc(100% /12 *  $index);
+//      @if $index % 2 == 0 {
+//         color: red;
+//      } @else {
+//         color: blue;
+//      }
+//     }
+// }
+// 2. while
+$i:0;
+@while $i < 10 {
+    $i:$i+1;
+    .color-#{$i} {
+        font-size: 10  * $i + px;
+    }
+}
+//3 . each
+$sizes : 30px 40px 50px;
+$length:length($sizes);
+$index:0;
+@each $size in $sizes{
+    $index:$index + 1;
+.item-#{$size}{
+    width: $size;
+    @if $index == $length {
+        padding: 0;
+    }
+}
+}
+// $sizes:(small 40px normal) (regular 60px bold) ( large 80px 600);
+// @each $type,$size,$width in $sizes {
+//     .item-#{$type}{
+//         font-size: $size;
+//         font-weight: $width;
+//     }
+// }
+$icons:
+  "small"40px normal,
+  "start" "\f12e" 16px,
+  "stop" "\f12f" 10px;
+
+@each $name, $glyph, $size in $icons {
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+    font-size: $size;
+  }
+}
+// key:value
+$sizes: (
+    small:40px,
+    regular:60px,
+    larger:80px,
+);
+@each $type,$size in $sizes {
+    .item-#{$type}{
+        width: $size;
+    }
+}
+$min-width : 567px 768px 992px 1200px 1400px;
+@media screen and (min-width:992px)  {
+    .box{
+        display: none;
+    }
+}

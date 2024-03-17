@@ -1,0 +1,29 @@
+.container {
+  padding: 0;
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.post {
+  background-color: gray;
+  width: 1000px;
+  margin: 20px auto;
+}
+.post .container {
+  padding: 0;
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.products {
+  box-shadow: 3px 3px 5px #ccc;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.courses {
+  padding: 30px;
+  width: 1000px;
+}
+
+/*# sourceMappingURL=ex02.css.map */

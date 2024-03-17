@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 900px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+
+}
+
+.services__inner>i {
+    font-size: 3.0rem;
+    color: #bc9789;
+    transition: visibility .1s linear;
+
+}
+
+.services {
+    padding: 20px 0;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services__items {
+    flex: 1 0 calc(33.333% - 20px);
+}
+
+.services__inner {
+    transition: transform .25s linear;
+
+}
+
+
+.services__wrap {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    height: calc(309px - 70px);
+    transform: all .5s linear;
+}
+
+.services__wrap::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    inset: 0;
+    border: 2px solid #ededf0;
+    transition: all .2s linear;
+}
+
+
+
+.heading.lv2 {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.desc {
+    margin-top: 24px;
+    line-height: 1.5rem;
+    color: #909093;
+    transition: all .2s linear;
+}
+
+.btn {
+    display: inline-block;
+
+
+}
+
+.services__items:hover {
+    background: url(../imgs/usman-yousaf-pTrhfmj2jDA-unsplash.jpg);
+    background-size: cover;
+}
+
+.services__items:hover .services__wrap {
+    background-color: #a2705a80;
+}
+
+.services__items:hover .services__wrap::before {
+    inset: 15px;
+    border-color: #664a3f80;
+
+}
+
+.services__items:hover .services__inner>i {
+    visibility: hidden;
+}
+
+.services__items:hover .services__inner .desc {
+    color: #fff;
+}
+
+.services__items:hover .services__inner {
+    color: #fff;
+    transform: translateY(-80px);
+}
+
+.fa-solid.fa-arrow-right {
+    transition: color .2s linear;
+}
+
+.icon__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #664a3f80;
+    border-radius: 50%;
+    transition: color .2s linear;
+}
+
+.services__row {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.services__row:hover .fa-solid.fa-arrow-right {
+    color: #664a3f80;
+}
+
+.services__row:hover .icon__inner {
+    background-color: #fff;
+}

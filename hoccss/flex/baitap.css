@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 65%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.item {
+    flex: 0 0 calc(100% / 5 - 50px);
+    text-align: center;
+}
+
+.item img {
+    max-height: 80px;
+    width: auto;
+}

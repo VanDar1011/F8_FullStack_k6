@@ -1,0 +1,63 @@
+@use "./partials/mixin.scss" as m;
+@use "./partials/reset.scss";
+// ví dụ trong file reset có ::placeholder, function, mixin, variable,
+// -> truy cập dựa ào namspace(tên file).
+// base: class hay sử dụng
+// 
+$containerWidth: 1200px;
+$column: 12;
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1800px
+);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+[class^="col-"] {
+    padding: 0 10px;
+}
+// @mixin column($breakpointPrefix: "") {
+//     $selectorPrefix: "col-";
+//     $offsetPrefix: "offset-";
+//     @if $breakpointPrefix != "" {
+//         $selectorPrefix: $selectorPrefix + $breakpointPrefix + "-";
+//     }
+//     @for $i from 1 through $column {
+//         .#{$selectorPrefix + $i} {
+//             flex-basis: calc(100% / $column * $i);
+//             max-width: calc(100% / $column * $i);
+//         }
+//     }
+//     @for $i from 1 through $column {
+//         .#{$selectorPrefix + $offsetPrefix + $i} {
+//             margin-left: calc(100% / $column * $i);
+//         }
+//     }
+// }
+// @import "partials/mixin.scss";
+@include m.column();
+// @each $prefix, $breakpoint in $breakpoints {
+//     @media screen and (max-width:
+//     #{$breakpoint}) {
+//         @include column($prefix);
+//     }
+// }

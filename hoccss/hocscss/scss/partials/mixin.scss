@@ -1,0 +1,20 @@
+@use "./variables" as v;
+@forward "./variables";
+@mixin column($breakpointPrefix: "") {
+    $selectorPrefix: "col-";
+    $offsetPrefix: "offset-";
+    @if $breakpointPrefix != "" {
+        $selectorPrefix: $selectorPrefix + $breakpointPrefix + "-";
+    }
+    @for $i from 1 through v.$column {
+        .#{$selectorPrefix + $i} {
+            flex-basis: calc(100% / v.$column * $i);
+            max-width: calc(100% / v.$column * $i);
+        }
+    }
+    @for $i from 1 through v.$column {
+        .#{$selectorPrefix + $offsetPrefix + $i} {
+            margin-left: calc(100% / v.$column * $i);
+        }
+    }
+}

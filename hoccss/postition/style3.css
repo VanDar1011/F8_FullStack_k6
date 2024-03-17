@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  transform: translate(-100%);
+  background-color: pink;
+  transition: display ease-in-out 0.5s;
+}
+
+.container {
+  position: fixed;
+  inset: 0;
+  background-color: red;
+}
+
+.btn {
+  padding: 20px;
+}
+
+.btn-menu {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background-color: aqua;
+  border-radius: 30PX;
+  border: 1px solid black;
+}
+
+#open-menu:checked~.menu {
+  transform: translateX(0);
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

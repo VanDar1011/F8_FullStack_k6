@@ -1,0 +1,59 @@
+.container {
+    width: 400px;
+    justify-content: center;
+    margin: 100px auto;
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    height: 200px;
+    border: 1px solid red;
+
+}
+
+.box {
+    background-color: red;
+    width: 10%;
+    height: 10px;
+    border-radius: 12px;
+    animation-name: lx;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+.box.box2 {
+
+    animation-delay: .1s;
+}
+
+.box.box3 {
+
+    animation-delay: .2s;
+}
+
+.box.box4 {
+
+    animation-delay: .3s;
+
+}
+
+@keyframes lx {
+    from {
+        /* width: 100%; */
+        height: 10%;
+
+    }
+
+    50% {
+        height: 70%;
+        /* width: 100%; */
+    }
+
+    to {
+        /* width:  100%; */
+        height: 10%;
+
+    }
+
+}

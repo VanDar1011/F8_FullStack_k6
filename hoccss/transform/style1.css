@@ -1,0 +1,152 @@
+/* transform 
+thay đổi vị trí, kích thước element 
+transform : scale,rotate 
+rotate :xoay theo trục
+rotate() theo z
+rotateX() theo X
+rotateY() theo Yz 
+rotate(): theo trục Z nếu gọi riêng 
+scale() phóng to thu nhỏ  
+scaleX()
+scaleY()
+scale3d()
+skew(x,y)
+translate(x,y) dịch chuyển 
+translateX(value) truc x
+translateY(value) 
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.element {
+    width: 200px;
+    height: 200px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    background-color: aquamarine;
+    /* transition: all 0.4s ease; */
+    /* transform: translateX(-50%);
+    transform: translateY(-50%); */
+    /* transform: translate(-50%, -50%); */
+
+}
+
+.box:hover .element {
+    /* transform: rotateY(30deg); */
+    /* transform: scale(2); */
+    /* scale: 1.5 3; */
+    /* rotate: 90deg; */
+    /* transform: scaleX(3); */
+    /* transform: scaleY(9); */
+    transform: skewX(56deg);
+    /* translate: 100px; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.checkbox {
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox .itemcheck {
+    display: none;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    background-color: transparent;
+    /* transform: translate(50%, -50%); */
+
+    rotate: -45deg;
+    width: 20px;
+    height: 10px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+label>input[type="checkbox"]:checked+.itemcheck {
+    display: block;
+}
+
+label>input[type="checkbox"]:disabled+.itemcheck {
+    display: none;
+}
+
+label>input[type="checkbox"]:checked {}
+
+.checkboxes {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.checkboxes label {
+    display: block;
+    line-height: 1.5;
+    position: relative;
+}
+
+.checkboxes input {
+    display: none;
+}
+
+.checkboxes span::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: rgba(220, 220, 220, 0.538);
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.checkboxes span::after {
+    display: none;
+    position: absolute;
+    content: "";
+    border-color: blue;
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    width: 10px;
+    height: 5px;
+    rotate: -45deg;
+    top: 8px;
+    left: 1.5px;
+}
+
+.checkboxes input:checked+span::after {
+    display: block;
+    border-color: white;
+}
+
+.checkboxes input:checked+span::before {
+    background-color: greenyellow;
+}
+
+.checkboxes input:disabled+span {
+    /* display: block; */
+    color: chocolate;
+    border-color: antiquewhite;
+}
+
+.checkboxes input:disabled+span::before {
+    background-color: rgba(128, 128, 128, 0.504);
+}
+
+.checkboxes input:disabled:checked+span::before {
+    background-color: rgba(172, 255, 47, 0.468);
+}

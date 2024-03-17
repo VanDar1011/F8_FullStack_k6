@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.heading3 {
+    margin-top: 20px;
+    color: red;
+    position: relative;
+    overflow: hidden;
+}
+
+.over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: green;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.heading3:hover .over {
+    top: -20px;
+    opacity: 0;
+
+
+}

@@ -1,0 +1,64 @@
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    border: 1px solid red;
+    width: 300px;
+    height: 400px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.box h2:nth-child(2) {
+    /* position: relative;
+     top: 50%; */
+    /* left: calc(100% - 100px); */
+    /* position: fixed; */
+    /* width: auto;
+    height: auto; */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* inset: 0; */
+    background: pink;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+
+
+}
+
+.box h2:nth-child(3) {
+
+    position: relative;
+
+
+}
+
+
+.box h2 {
+    background-color: green;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #fff;
+}
+
+/* position 
++ static 
++ relative
++ absolute
++ fixed
+Cac thuộc tính liên quan 
++ top 
++ left
++ right
++ bottom
++ z- index
++ inset
+*/

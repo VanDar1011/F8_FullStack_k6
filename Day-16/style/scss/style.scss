@@ -10,7 +10,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Inter";
-    background-color: whitesmoke;
+    background-color: #fff;
 }
 a {
     text-decoration: none;
@@ -115,6 +115,11 @@ a {
             // width: 100%;
             .right_zero {
                 width: 100%;
+                height: 708px;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // height: fit-content;
                 position: relative;
                 border-radius: 20px;
                 background: #dcffca;
@@ -125,15 +130,19 @@ a {
                     top: 20px;
                     left: calc(100% - 20px);
                     color: #216000;
-                    font-size: 60px;
+                    font-size: 10em;
                     font-weight: 700;
                     opacity: 0.15;
                     transform-origin: left top;
                     rotate: 90deg;
                 }
                 .item_img_hero {
-                    width: 70%;
+                    position: absolute;
+                    // width: 90%;
                     max-width: 471px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -10%;
                     // max-width: 300px;
                 }
             }
@@ -141,6 +150,7 @@ a {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding-right: 20px;
                 .content_left_zero {
                     .title_zero {
                         color: #2c2c2c;
@@ -159,6 +169,7 @@ a {
                         line-height: normal;
                     }
                     .content_zero {
+                        max-width: 450px;
                         color: #2c2c2c;
                         font-family: "Inter";
                         font-size: 1em;
@@ -407,6 +418,9 @@ a {
                     line-height: normal;
                     background-color: #46b20f;
                     border-radius: 6px;
+                    &:hover {
+                        background-color: #ff6916;
+                    }
                 }
             }
             .green_circle_item_product {
@@ -420,6 +434,8 @@ a {
 // }
 .news {
     margin-top: 129px;
+    margin-left: 40px;
+    margin-right: 40px;
 
     h2 {
         &.title_news {
@@ -454,6 +470,14 @@ a {
         border-radius: 6.667px;
         border: 0.833px solid #46b20f;
         margin-top: 80px;
+        &:hover {
+            background-color: #46b20f;
+            // color: #ffffff;
+            + img {
+                // color: #ffffff;
+                src: url("../../assets/images/page/home/icon_chvron_dou_right_white.svg");
+            }
+        }
     }
 }
 .list_news {
@@ -703,9 +727,13 @@ a {
     }
 }
 .about {
-    margin-top: 106px;
-    margin-left: 50px;
-    margin-right: 50px;
+    // margin-top: 106px;
+    // margin-left: 50px;
+    // margin-right: 50px;
+    padding-top: 106px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #f2ffec;
     .row1_about {
         > .col-3 {
             display: flex;

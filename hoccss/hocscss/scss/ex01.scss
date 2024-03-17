@@ -1,0 +1,81 @@
+// biến trong scss 
+// giá trị css
+// chuỗi 
+// true,false
+// số
+// trong scss chấp nhận các toán tử :+,-,*,/,%,==,>=,<=,>,<,!=,and , or, not
+@import "partials/variables";
+@import "partials/reset";
+:root{
+    --secondary-color:red;
+}
+body{
+    color: red;
+    background: $primaryColor;
+}
+.heading2{
+    color: var(--secondary-color);
+    box-shadow: 1px 1px 1px red;
+}
+// dat ngo 
+.header{
+    $headerSpacing:30px;
+
+    padding: $headerSpacing 0;
+    box-shadow: 3px 3px 5px #ccc;
+    .topbar{
+        background-color: yellow;
+        .left{
+            list-style: none;
+            a{
+                text-decoration: none;
+            }
+            
+        }
+        .right{
+            color: brown;
+        }
+    }
+}
+.menu{
+    > ul{
+       ~ li{
+        &::before{
+            content: "";
+        } 
+        + a{
+                color: #444;
+        &:hover{
+            color: green;
+            &::before{
+                content: "";
+            }
+            
+        }
+            }
+        }
+    }
+}
+ul {
+&.list{
+    list-style: none;
+}
+}
+// & gán ngay đằng sau 
+// các kĩ thuật sử dụng biến 
+
+.box{
+    color: $color;
+    #{$props}:green;
+    font-size: #{$size}px;
+    font-size: $size + 0%;
+
+
+
+}
+#{$selectorPrefix}-1{
+    width: 200px;
+}
+#{$selectorPrefix + "-2"}{
+    width: 200px;
+}

@@ -1,0 +1,44 @@
+.block1 {
+    border: 1px solid red;
+    margin-bottom: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.block2 {
+    border: 1px solid green;
+    margin-top: -30px;
+}
+
+.box {
+    background: green;
+    /* border: 1px solid red; */
+    /* box-sizing: border-box; */
+    /* position: fixed; */
+    /* display: grid; */
+    /* float: left; */
+
+}
+
+h3 {
+    padding: 40px 0;
+    /* letter-spacing: 0px; */
+    
+}
+
+
+/* trên đẩy xuống, đưới đẩy lên
+cùng dấu dương thì lấy giá trị lớn hơn
+khác dấu thì cộng vào
+cùng âm thì lấy thằng bé hơn  
+Thu hẹp lề thành phần con
+- border: 
+- position : fixed, absolute
+- display : flex/ inline-block/ table/ table-cell/grid
+- float: left/right
+giải pháp: chuyển thành padding
+
+*/

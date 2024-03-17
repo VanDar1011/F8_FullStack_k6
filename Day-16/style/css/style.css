@@ -12,7 +12,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Inter";
-  background-color: whitesmoke;
+  background-color: #fff;
 }
 
 a {
@@ -111,6 +111,7 @@ a {
 }
 .main .zero .row .right_zero {
   width: 100%;
+  height: 708px;
   position: relative;
   border-radius: 20px;
   background: #dcffca;
@@ -122,20 +123,24 @@ a {
   top: 20px;
   left: calc(100% - 20px);
   color: #216000;
-  font-size: 60px;
+  font-size: 10em;
   font-weight: 700;
   opacity: 0.15;
   transform-origin: left top;
   rotate: 90deg;
 }
 .main .zero .row .right_zero .item_img_hero {
-  width: 70%;
+  position: absolute;
   max-width: 471px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10%;
 }
 .main .zero .row .left_zero {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 20px;
 }
 .main .zero .row .left_zero .content_left_zero .title_zero {
   color: #2c2c2c;
@@ -154,6 +159,7 @@ a {
   line-height: normal;
 }
 .main .zero .row .left_zero .content_left_zero .content_zero {
+  max-width: 450px;
   color: #2c2c2c;
   font-family: "Inter";
   font-size: 1em;
@@ -376,12 +382,17 @@ a {
   background-color: #46b20f;
   border-radius: 6px;
 }
+.products .list_products .item_product .content_product .btn_add_product:hover {
+  background-color: #ff6916;
+}
 .products .list_products .item_product .green_circle_item_product {
   background-color: #c5ffa8;
 }
 
 .news {
   margin-top: 129px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .news h2.title_news {
   text-align: center;
@@ -413,6 +424,12 @@ a {
   border-radius: 6.667px;
   border: 0.833px solid #46b20f;
   margin-top: 80px;
+}
+.news .btn_more:hover {
+  background-color: #46b20f;
+}
+.news .btn_more:hover + img {
+  src: url("../../assets/images/page/home/icon_chvron_dou_right_white.svg");
 }
 
 .list_news {
@@ -663,9 +680,10 @@ a {
 }
 
 .about {
-  margin-top: 106px;
-  margin-left: 50px;
-  margin-right: 50px;
+  padding-top: 106px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #f2ffec;
 }
 .about .row1_about > .col-3 {
   display: flex;

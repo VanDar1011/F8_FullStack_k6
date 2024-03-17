@@ -1,0 +1,44 @@
+/* Độ ưu tiên làm việc css 
+important
+inline
+id
+class
+tag
+--> phạm vị tác động càng rộng, độ ưu tiên càng thấp 
+*/
+h2.heading2 {
+    color: red !important;
+}
+
+.heading2 {
+    color: blue;
+}
+
+#heading-f8 {
+    color: green !important;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
