@@ -17,4 +17,4 @@ setInterval(function () {
   } else {
     i++;
   }
-}, 100);
+}, 30);
