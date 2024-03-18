@@ -12,7 +12,7 @@ setInterval(function () {
     document.body.innerHTML = html;
   }
 
-  if (i > string_content.length) {
+  if (i === string_content.length) {
     i = 0;
   } else {
     i++;
