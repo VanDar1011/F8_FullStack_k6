@@ -1,0 +1,38 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-box {
+    width: auto;
+    height: 250px;
+}
+
+.infor {
+    width: 70%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.item {
+    display: flex;
+    /* align-items: center; */
+    gap: 30px;
+
+}
+
+.item+.item {
+    margin-top: 30px;
+}
+
+.item.right {
+    flex-direction: row-reverse;
+}
+
+.item.right .infor {
+    margin-right: auto;
+}
