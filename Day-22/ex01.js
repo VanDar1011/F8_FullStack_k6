@@ -58,6 +58,7 @@ console.log(
   )}`
 );
 // bài 3
+console.log(`So nguyen duong nho nhat trong mang khong cos trong mang`);
 function findMixInteger(array) {
   var i = 1;
   while (array.includes(i)) {
